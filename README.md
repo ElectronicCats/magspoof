@@ -1,5 +1,5 @@
 
-# MagSpoof by Electronic Cats
+# MagSpoof By Electronic Cats
 
 # What is MagSpoof?
 
