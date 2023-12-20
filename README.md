@@ -1,5 +1,14 @@
-
 # MagSpoof By Electronic Cats
+
+<p align="center">
+  <img src="https://github.com/AndreaZGuz/magspoof/assets/122187221/110310b2-5dc3-4f70-af95-51d3af226e4e" />
+</p>
+
+<p align=center>
+<a href="https://electroniccats.com/store/magspoof-v4/">
+  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
+</a>
+</p>
 
 # What is MagSpoof?
 
@@ -33,6 +42,16 @@ You can see more of my projects at <http://samy.pl> or contact me at <code@samy.
 ------
 
 # Wiki and Getting Started 
+
+<p align="center">
+  <img src="https://github.com/AndreaZGuz/magspoof/assets/122187221/4027a6a4-091b-4fed-990a-51ff569010a4" />
+</p>
+
+<p align=center>
+<a href="https://github.com/ElectronicCats/magspoof/wiki">
+  <img src="https://github.com/AndreaZGuz/magspoof/assets/122187221/0ce49fe7-c43b-47fe-977c-97a64bd86575" width="300" height="156" />
+</a>
+</p>
 
 ------
 # License
