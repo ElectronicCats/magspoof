@@ -6,7 +6,7 @@
 
 <p align=center>
 <a href="https://electroniccats.com/store/magspoof-v4/">
-  <img src="https://electroniccats.com/wp-content/uploads/badge_store.png" width="200" height="104" />
+  <img src="https://github.com/ElectronicCats/magspoof/assets/122187221/9633b08e-2120-45c7-b7fe-362b901a30ba" width="200" height="104" />
 </a>
 </p>
 
