@@ -539,11 +539,6 @@
       (net 11 "/Out_A") (pinfunction "Pin_1") (pintype "passive") (tstamp 49578d4f-075c-45f4-b90c-2f5b09f658e2))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 12 "/Out_B") (pinfunction "Pin_2") (pintype "passive") (tstamp 8f4d881f-1528-4280-87fe-ebaf8c94e202))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (layer "F.Cu")
