@@ -5701,24 +5701,24 @@
 		(uuid "1c1cc223-a2b5-458b-a0ae-6ef2209c145c")
 	)
 	(label "Out_B"
-		(at 210.82 99.06 180)
+		(at 226.06 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "24903641-6459-42c5-a28d-54228778a567")
 	)
 	(label "Out_A"
-		(at 210.82 88.9 180)
+		(at 226.06 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "27d3344c-ea5c-4146-924d-625a741ccd5e")
 	)
@@ -5734,15 +5734,26 @@
 		(uuid "371a78f1-50f9-43f1-be3c-7d333b59f78e")
 	)
 	(label "Out_B"
-		(at 232.41 99.06 180)
+		(at 187.96 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "3bbfc713-09b6-41ef-854b-cda08d7d7133")
+	)
+	(label "Out_A"
+		(at 207.01 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3eff33dc-ddf6-4b15-b948-90c7ac941164")
 	)
 	(label "LED"
 		(at 82.55 110.49 0)
@@ -5754,6 +5765,28 @@
 			(justify left bottom)
 		)
 		(uuid "3ff676be-a641-4e86-a91c-5fd48b3393fa")
+	)
+	(label "Out_B"
+		(at 245.11 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4461498a-ef6d-4cb5-b147-eb46e59b18e9")
+	)
+	(label "Out_B"
+		(at 207.01 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59f0e67b-5946-46a2-8d7f-a57baa2f61d5")
 	)
 	(label "RXD"
 		(at 271.1958 83.2104 180)
@@ -5767,13 +5800,13 @@
 		(uuid "6e545e88-c44a-4ae6-9283-b5d08610a9d6")
 	)
 	(label "Out_A"
-		(at 232.41 88.9 180)
+		(at 187.96 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "75ae9d24-656a-4b71-874c-ec8d8084a164")
 	)
@@ -5908,6 +5941,17 @@
 			(justify left bottom)
 		)
 		(uuid "b0658af9-e878-42d4-858e-0c7b5a6d54d0")
+	)
+	(label "Out_A"
+		(at 245.11 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b92b1bb7-5a8c-45c5-99a5-e830afee0c44")
 	)
 	(label "TXD"
 		(at 81.788 91.44 0)
@@ -6781,7 +6825,7 @@
 	)
 	(symbol
 		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
-		(at 214.63 93.98 270)
+		(at 229.87 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6790,7 +6834,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ed7393c-d441-4a5c-aeaf-14382ea349b1")
 		(property "Reference" "L2"
-			(at 214.63 93.3449 90)
+			(at 229.87 94.6149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6798,8 +6842,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 214.63 95.25 90)
+		(property "Value" "25t_30mm"
+			(at 229.87 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6808,7 +6852,7 @@
 			)
 		)
 		(property "Footprint" "magspoof:Coil_25t_30mm_0.2_0.2_0.6_0.3"
-			(at 214.63 93.98 0)
+			(at 229.87 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6817,7 +6861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 93.98 0)
+			(at 229.87 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6826,7 +6870,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 214.63 93.98 0)
+			(at 229.87 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8341,6 +8385,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
+		(at 248.92 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6448b3ff-df83-4745-aa5d-40587bbf3ea4")
+		(property "Reference" "L4"
+			(at 248.92 94.6149 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30t_30mm"
+			(at 248.92 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "magspoof:Coil_30t_30mm_0.2_0.2_0.6_0.3"
+			(at 248.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "09567c45-ad26-4cac-980f-2bf1874b7b07")
+		)
+		(pin "1"
+			(uuid "d9e6a90a-0017-4300-a62a-126ae6dc04c0")
+		)
+		(instances
+			(project "Magspoof_V4"
+				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
+					(reference "L4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 55.88 39.243 0)
 		(unit 1)
@@ -8496,6 +8610,76 @@
 			(project "Magspoof_V4"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
+		(at 210.82 95.25 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "752d0499-9a39-42e0-9735-eb4bb0396f10")
+		(property "Reference" "L3"
+			(at 210.82 94.6149 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30t_35mm"
+			(at 210.82 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "magspoof:Coil_30t_35mm_0.2_0.2_0.6_0.3"
+			(at 210.82 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6cb0c983-e959-4fa0-a3f9-9af819e62f8f")
+		)
+		(pin "1"
+			(uuid "e698c94c-5789-4995-9953-37f582e8a7d2")
+		)
+		(instances
+			(project "Magspoof_V4"
+				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -9046,16 +9230,15 @@
 	)
 	(symbol
 		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
-		(at 236.22 93.98 270)
+		(at 191.77 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "832ed39e-8bd0-44c2-bf50-89d99f1d8611")
 		(property "Reference" "L1"
-			(at 236.22 93.3449 90)
+			(at 191.77 94.6149 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9063,8 +9246,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 236.22 95.25 90)
+		(property "Value" "20t_35mm"
+			(at 191.77 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9073,7 +9256,7 @@
 			)
 		)
 		(property "Footprint" "Library:Coil_20t_35mm_0.2_0.2_0.6_0.3"
-			(at 236.22 93.98 0)
+			(at 180.594 95.504 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9082,7 +9265,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 93.98 0)
+			(at 191.77 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9091,7 +9274,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 93.98 0)
+			(at 191.77 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
