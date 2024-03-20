@@ -3304,20 +3304,12 @@
 			(extension_offset 0.5) keep_text_aligned)
 	)
 	(segment
-		(start 51.12 50.28)
-		(end 51.13 50.27)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "1190b00d-f212-42df-bbb7-4c97cba491ae")
-	)
-	(segment
 		(start 44.45 49.27)
 		(end 48.62 49.27)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 1)
-		(uuid "e5cb878f-f018-4483-9fc2-df9cc1591e5a")
+		(uuid "dae708f5-e987-4874-9610-321e88239d42")
 	)
 	(segment
 		(start 46.455 31.685)
@@ -3341,7 +3333,7 @@
 		(width 0.2)
 		(layer "F.Cu")
 		(net 3)
-		(uuid "d9e56c6b-75aa-490e-bd96-fd1486effe23")
+		(uuid "a5158cd2-84e0-4ce5-9128-60cee09788f3")
 	)
 	(segment
 		(start 62.23 48.76)
