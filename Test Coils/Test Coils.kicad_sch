@@ -1,0 +1,792 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "fb12b203-3172-437b-9d5e-027bd3eaf3c1")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Magspoof:Coil_20t_35mm_0.2_0.6_0.3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Coil_20t_35mm_0.2_0.6_0.3_0_1"
+				(circle
+					(center 0 -3.81)
+					(radius 2.5016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Coil_20t_35mm_0.2_0.6_0.3_1_1"
+				(pin input line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 -3.81 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 115.57 30.48) (xy 99.06 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22675f34-828c-4ff1-81f9-b572dd0994a9")
+	)
+	(wire
+		(pts
+			(xy 17.78 20.32) (xy 33.02 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24586ad8-3688-4d42-85cf-9878299b5180")
+	)
+	(wire
+		(pts
+			(xy 33.02 26.67) (xy 33.02 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29edf766-4596-4ee7-a80b-278c0a2eba7f")
+	)
+	(wire
+		(pts
+			(xy 99.06 20.32) (xy 115.57 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5291e5e5-9254-40c4-a131-3e9049e0dca0")
+	)
+	(wire
+		(pts
+			(xy 33.02 20.32) (xy 33.02 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "542ea21d-0b6b-4391-8038-c61021b822af")
+	)
+	(wire
+		(pts
+			(xy 33.02 30.48) (xy 17.78 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bfe3d60-7324-4de4-a830-8bb821320ea6")
+	)
+	(wire
+		(pts
+			(xy 73.66 30.48) (xy 58.42 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63c4dd39-89a7-42f2-ba33-40264be2e9af")
+	)
+	(wire
+		(pts
+			(xy 58.42 20.32) (xy 73.66 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eb6bcef-8df3-446a-b2f3-c01d3339374e")
+	)
+	(wire
+		(pts
+			(xy 115.57 20.32) (xy 115.57 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "898cdc50-e933-4d26-93c3-e5a4a405ef96")
+	)
+	(wire
+		(pts
+			(xy 73.66 20.32) (xy 73.66 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae198dc8-c02f-4834-ac5d-2764dff18e92")
+	)
+	(wire
+		(pts
+			(xy 73.66 26.67) (xy 73.66 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daf014c0-7d04-4b83-a0c7-bec088190015")
+	)
+	(wire
+		(pts
+			(xy 115.57 26.67) (xy 115.57 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc71d3b9-51f8-4aaf-a832-7d6722e92ecb")
+	)
+	(symbol
+		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
+		(at 62.23 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "135eeb34-edc5-4a96-a6a0-e8d01fd8b125")
+		(property "Reference" "L2"
+			(at 62.23 24.7649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "25t_30mm"
+			(at 62.23 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "magspoof:Coil_25t_30mm_0.2_0.2_0.6_0.3"
+			(at 62.23 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6ac28151-0432-4647-8810-e1931da0ce36")
+		)
+		(pin "1"
+			(uuid "4367dca8-5139-4096-9022-adbcd14cb3a1")
+		)
+		(instances
+			(project "PCB Coil Panel"
+				(path "/fb12b203-3172-437b-9d5e-027bd3eaf3c1"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 38.1 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38ca78e9-8ff3-43ba-8f81-0591d176938d")
+		(property "Reference" "J1"
+			(at 40.64 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 40.64 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 38.1 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 38.1 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "63040943-76a1-495e-90f1-addd2e94bb9d")
+		)
+		(pin "1"
+			(uuid "d61c7bb3-3f5b-4d4f-837a-b0f6375aa03c")
+		)
+		(instances
+			(project "PCB Coil Panel"
+				(path "/fb12b203-3172-437b-9d5e-027bd3eaf3c1"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
+		(at 21.59 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bd7db4d-061b-4125-a55d-818e98773ce4")
+		(property "Reference" "L1"
+			(at 21.59 24.7649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30t_35mm"
+			(at 21.59 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "magspoof:Coil_30t_35mm_0.2_0.2_0.6_0.3"
+			(at 21.59 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 21.59 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b72f2306-71ee-43f4-b143-54ba524a16bb")
+		)
+		(pin "1"
+			(uuid "2d6c1ee1-a46d-4df9-9063-d7cc38986e66")
+		)
+		(instances
+			(project "PCB Coil Panel"
+				(path "/fb12b203-3172-437b-9d5e-027bd3eaf3c1"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 78.74 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c87e147-5bed-4a30-a3df-ce42067d7221")
+		(property "Reference" "J2"
+			(at 81.28 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 81.28 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 78.74 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 78.74 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9287f657-6df4-436c-9b9f-ce2cc3b97ce3")
+		)
+		(pin "1"
+			(uuid "3845f12c-25e5-448e-ac53-1e4135db3cec")
+		)
+		(instances
+			(project "PCB Coil Panel"
+				(path "/fb12b203-3172-437b-9d5e-027bd3eaf3c1"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
+		(at 102.87 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a30ca84f-2503-4d3e-a721-07e7f12cc11b")
+		(property "Reference" "L3"
+			(at 102.87 24.7649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30t_30mm"
+			(at 102.87 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "magspoof:Coil_30t_30mm_0.2_0.2_0.6_0.3"
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "de5ef549-7b5e-45d7-8f56-de8b74fcaf83")
+		)
+		(pin "1"
+			(uuid "1414fe24-8b73-402d-9cad-69752248e738")
+		)
+		(instances
+			(project "PCB Coil Panel"
+				(path "/fb12b203-3172-437b-9d5e-027bd3eaf3c1"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 120.65 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de1823ad-9bf5-4d5f-9893-b3d8dc6b0f44")
+		(property "Reference" "J3"
+			(at 123.19 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 123.19 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 120.65 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 120.65 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3d88b192-7c6e-43f1-a4f5-c8d52a3a2183")
+		)
+		(pin "1"
+			(uuid "2f836f32-6372-4936-801a-a60d3837e9a9")
+		)
+		(instances
+			(project "PCB Coil Panel"
+				(path "/fb12b203-3172-437b-9d5e-027bd3eaf3c1"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
