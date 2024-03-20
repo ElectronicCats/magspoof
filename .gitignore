@@ -27,5 +27,6 @@ fp-info-cache
 *.xml
 *.csv
 
-
+# Backups
 V4/Hw/Magspoof_V4-backups/
+Test Coils/Test Coils-backups
