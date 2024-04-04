@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Magspoof")(type "KiCad")(uri "${KIPRJMOD}/Magspoof.kicad_sym")(options "")(descr ""))
+)
