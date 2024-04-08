@@ -6049,7 +6049,7 @@
 			(uuid "22776dc2-e01b-4366-8d0f-a2a245618188")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U1")
 					(unit 1)
@@ -6114,7 +6114,7 @@
 			(uuid "93b8a319-cd0c-4056-a451-197d9ea5a860")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0103")
 					(unit 1)
@@ -6208,7 +6208,7 @@
 			(uuid "935a90d6-19b5-4276-b392-64f09066fbf3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R3")
 					(unit 1)
@@ -6273,7 +6273,7 @@
 			(uuid "426b5f8a-c420-4053-ac02-0c346d313d46")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR057")
 					(unit 1)
@@ -6309,7 +6309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 189.865 107.442 0)
 			(effects
 				(font
@@ -6337,7 +6337,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H1")
 					(unit 1)
@@ -6449,7 +6449,7 @@
 			(uuid "04065519-3f19-4c28-bd64-3988c8050cae")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U3")
 					(unit 1)
@@ -6514,7 +6514,7 @@
 			(uuid "a4e9c699-e67e-4ead-8895-0d98e7a440cf")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR012")
 					(unit 1)
@@ -6579,7 +6579,7 @@
 			(uuid "be16835b-8cf5-4e27-beab-0a7ab9adc287")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR049")
 					(unit 1)
@@ -6644,7 +6644,7 @@
 			(uuid "ce99fcec-445c-4d9f-a533-8204594d97e4")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR062")
 					(unit 1)
@@ -6749,7 +6749,7 @@
 			(uuid "6cef8439-60ed-47e5-bebb-62d5dade7e6b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U5")
 					(unit 1)
@@ -6814,7 +6814,7 @@
 			(uuid "0c1a0afb-720d-40b5-a4e6-fd217f43c54b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR050")
 					(unit 1)
@@ -6850,7 +6850,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 189.865 115.443 0)
 			(effects
 				(font
@@ -6878,7 +6878,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H2")
 					(unit 1)
@@ -6977,7 +6977,7 @@
 			(uuid "15ba837b-bc1a-41a9-b1ce-a868de5cc3a9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "Q1")
 					(unit 1)
@@ -7073,7 +7073,7 @@
 			(uuid "5ab4ce3b-0970-4b5b-a686-d9df52ed0b9e")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW3")
 					(unit 1)
@@ -7138,7 +7138,7 @@
 			(uuid "eb4fe616-8347-4916-8411-8d9d73986694")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR033")
 					(unit 1)
@@ -7203,7 +7203,7 @@
 			(uuid "f0240cbf-60bd-457d-8fdd-15d3b8f631b9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR063")
 					(unit 1)
@@ -7268,7 +7268,7 @@
 			(uuid "c1046c72-aa0a-40ac-9da2-4a161de15af6")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR061")
 					(unit 1)
@@ -7362,7 +7362,7 @@
 			(uuid "a7b59b17-dc79-46be-87b1-941ebe4b0861")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R2")
 					(unit 1)
@@ -7458,7 +7458,7 @@
 			(uuid "1a7f4ee7-1bb2-4ea1-bca9-5f4977cb7064")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C4")
 					(unit 1)
@@ -7552,7 +7552,7 @@
 			(uuid "2d3c086e-d4bb-43ec-a32e-8a4e013fd4a5")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R1")
 					(unit 1)
@@ -7617,7 +7617,7 @@
 			(uuid "10e8af27-306e-4933-8c62-065060b17a4b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0101")
 					(unit 1)
@@ -7682,7 +7682,7 @@
 			(uuid "bbb4b69b-0e40-430b-9ad1-3cfe2c3d5d37")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0105")
 					(unit 1)
@@ -7747,7 +7747,7 @@
 			(uuid "98fbf54d-3179-47e1-80d7-7c78a4ee7a5f")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR07")
 					(unit 1)
@@ -7812,7 +7812,7 @@
 			(uuid "92bc1bbc-9ba0-4822-bd32-ca04af29207c")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR055")
 					(unit 1)
@@ -7877,7 +7877,7 @@
 			(uuid "7ff88e39-008e-476b-b216-966a8089af00")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR064")
 					(unit 1)
@@ -7980,7 +7980,7 @@
 			(uuid "7c18bee5-d74f-48b4-9769-7de872dfb679")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U2")
 					(unit 1)
@@ -8045,7 +8045,7 @@
 			(uuid "a3d4f37a-f84b-4c59-a500-0adbae14bb47")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR056")
 					(unit 1)
@@ -8110,7 +8110,7 @@
 			(uuid "6745a6ad-5b89-4d7c-ac80-f3b0071b3279")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR059")
 					(unit 1)
@@ -8175,7 +8175,7 @@
 			(uuid "5f5032f2-0b00-4fa8-82b8-80e92e472205")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR045")
 					(unit 1)
@@ -8240,7 +8240,7 @@
 			(uuid "ee4f5221-b7e1-47d1-ba2e-987fa4fa1b9e")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0102")
 					(unit 1)
@@ -8310,7 +8310,7 @@
 			(uuid "d9e6a90a-0017-4300-a62a-126ae6dc04c0")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "L4")
 					(unit 1)
@@ -8375,7 +8375,7 @@
 			(uuid "6cdf32c5-43dd-48a4-969b-3cb91ce08a33")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR05")
 					(unit 1)
@@ -8471,7 +8471,7 @@
 			(uuid "c98e0180-f3a9-4b32-be9c-2ccc58d24344")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R9")
 					(unit 1)
@@ -8567,7 +8567,7 @@
 			(uuid "0f43f72a-7b84-441e-96f6-a398b4f5160f")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R7")
 					(unit 1)
@@ -8632,7 +8632,7 @@
 			(uuid "af05eeae-0976-43bd-85e3-b71102fc11b6")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR04")
 					(unit 1)
@@ -8728,7 +8728,7 @@
 			(uuid "0a7e7737-6c8a-42a9-81fc-734eee98c840")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C1")
 					(unit 1)
@@ -8824,7 +8824,7 @@
 			(uuid "3e5e4dcc-c50b-4d53-9db7-825ea1ba8288")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C17")
 					(unit 1)
@@ -8920,7 +8920,7 @@
 			(uuid "f70eaade-7a26-4e06-b93b-c18d2cb248d2")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R10")
 					(unit 1)
@@ -9014,7 +9014,7 @@
 			(uuid "44d1efd1-bd6e-4e62-a144-00f06fb43c5b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW1")
 					(unit 1)
@@ -9079,7 +9079,7 @@
 			(uuid "c563e626-30a0-4387-9ff3-b36b52af068a")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR017")
 					(unit 1)
@@ -9206,7 +9206,7 @@
 			(uuid "7e232a37-a0ff-447f-9dd7-188168bc0ee2")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "P1")
 					(unit 1)
@@ -9302,7 +9302,7 @@
 			(uuid "41543586-e774-4cbe-89ac-5ca53ccec2c1")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "D4")
 					(unit 1)
@@ -9338,7 +9338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 190.119 124.079 0)
 			(effects
 				(font
@@ -9366,7 +9366,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H3")
 					(unit 1)
@@ -9462,7 +9462,7 @@
 			(uuid "81323646-24c3-4215-8d13-429aa25e16c8")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "D3")
 					(unit 1)
@@ -9559,7 +9559,7 @@
 			(uuid "362dce22-f82a-42bb-8aea-4df1fd006ffe")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C3")
 					(unit 1)
@@ -9655,7 +9655,7 @@
 			(uuid "61eddac6-971b-4c4d-a235-13bf9b931fc3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R11")
 					(unit 1)
@@ -9720,7 +9720,7 @@
 			(uuid "4c3d3c04-36ef-4c86-bf09-7eeb73835ad0")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR058")
 					(unit 1)
@@ -9788,7 +9788,7 @@
 			(uuid "eb04e5ff-1e51-4e9e-adae-5a15e79e47a3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "JP1")
 					(unit 1)
@@ -9884,7 +9884,7 @@
 			(uuid "b572c7c0-6a53-4797-8a88-a6de634e320d")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C18")
 					(unit 1)
@@ -9963,7 +9963,7 @@
 			(uuid "dcb478a5-db01-49d5-af43-2482424e2b6e")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "BT1")
 					(unit 1)
@@ -10028,7 +10028,7 @@
 			(uuid "0b5c6a78-3832-4779-966b-aad25ae63e75")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0104")
 					(unit 1)
@@ -10137,7 +10137,7 @@
 			(uuid "222edb2c-c7f5-4be3-baae-da33ba4f8944")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW4")
 					(unit 1)
@@ -10202,7 +10202,7 @@
 			(uuid "aefe3f0b-8144-410b-bb0a-9da62e35b4a9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR041")
 					(unit 1)
@@ -10267,7 +10267,7 @@
 			(uuid "4b644cbf-dd02-48c8-92c7-88138b342ea8")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR013")
 					(unit 1)
@@ -10363,7 +10363,7 @@
 			(uuid "02e6c3b2-d23b-4782-aa62-2166532f1eae")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C2")
 					(unit 1)
@@ -10428,7 +10428,7 @@
 			(uuid "0e4a9f7b-7aef-48f3-a968-6e1b73f20b13")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR02")
 					(unit 1)
@@ -10493,7 +10493,7 @@
 			(uuid "2660efc0-f0fd-4e32-882e-89d912ba3b1c")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR052")
 					(unit 1)
@@ -10529,7 +10529,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 190.119 133.35 0)
 			(effects
 				(font
@@ -10557,7 +10557,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H4")
 					(unit 1)
@@ -10641,7 +10641,7 @@
 			(uuid "12caf851-ee3c-4974-bf44-9a3036c212df")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "J2")
 					(unit 1)
@@ -10706,7 +10706,7 @@
 			(uuid "98801d47-3635-4282-b1af-28516f463987")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR010")
 					(unit 1)
@@ -10800,7 +10800,7 @@
 			(uuid "6cfb7b33-5d44-4802-8833-94f092cc1d78")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "D1")
 					(unit 1)
@@ -10865,7 +10865,7 @@
 			(uuid "b165babe-74a2-4ed8-858c-2d16f36e21e3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR014")
 					(unit 1)
@@ -10930,7 +10930,7 @@
 			(uuid "14708bcd-c41f-4ebb-91a5-ccac4c907927")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR044")
 					(unit 1)
@@ -10995,7 +10995,7 @@
 			(uuid "cc961de0-f27b-42ab-97e4-4d8572d42ea9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR065")
 					(unit 1)
@@ -11089,7 +11089,7 @@
 			(uuid "3e6a1b98-67b9-4b1c-814f-603f70f97851")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW5")
 					(unit 1)
@@ -11183,7 +11183,7 @@
 			(uuid "99573800-bd04-4f62-befd-c81b1c10e446")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "F1")
 					(unit 1)
@@ -11248,7 +11248,7 @@
 			(uuid "909b0c15-d773-45fb-b7bd-517a74006804")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR048")
 					(unit 1)
@@ -11313,7 +11313,7 @@
 			(uuid "d458610a-7455-4349-af21-bee42fe65993")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR060")
 					(unit 1)
