@@ -186,6 +186,7 @@
         0.2,
         0.25,
         0.3,
+        0.4,
         0.5
       ],
       "tuning_pattern_settings": {
@@ -461,7 +462,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Magspoof_V4.kicad_pro",
+    "filename": "Magspoof_V5.kicad_pro",
     "version": 1
   },
   "net_settings": {
