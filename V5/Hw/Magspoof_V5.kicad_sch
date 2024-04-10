@@ -9736,7 +9736,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f911567-e5ab-4ced-9c71-0afe9a37dc4c")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 173.8122 127.6096 0)
 			(effects
 				(font
@@ -9805,7 +9805,7 @@
 		(instances
 			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -10915,7 +10915,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e151add3-871c-47e3-9928-60983bcc8283")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 280.924 81.28 0)
 			(effects
 				(font
@@ -10984,7 +10984,7 @@
 		(instances
 			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
