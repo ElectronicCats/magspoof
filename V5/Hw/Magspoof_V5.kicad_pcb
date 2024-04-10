@@ -3989,7 +3989,7 @@
 	(footprint "kibuzzard-6435F3C4"
 		(layer "F.Cu")
 		(uuid "51722c76-a74c-4a75-82f8-6e6bafeacff7")
-		(at 140.42 50.31 90)
+		(at 145.21 50.01 90)
 		(descr "Generated with KiBuzzard")
 		(tags "kb_params=eyJBbGlnbm1lbnRDaG9pY2UiOiAiQ2VudGVyIiwgIkNhcExlZnRDaG9pY2UiOiAiWyIsICJDYXBSaWdodENob2ljZSI6ICJdIiwgIkZvbnRDb21ib0JveCI6ICJVYnVudHVNb25vLUIiLCAiSGVpZ2h0Q3RybCI6ICIuOCIsICJMYXllckNvbWJvQm94IjogIkYuU2lsa1MiLCAiTXVsdGlMaW5lVGV4dCI6ICJDT0lMIiwgIlBhZGRpbmdCb3R0b21DdHJsIjogIjUiLCAiUGFkZGluZ0xlZnRDdHJsIjogIjUiLCAiUGFkZGluZ1JpZ2h0Q3RybCI6ICI1IiwgIlBhZGRpbmdUb3BDdHJsIjogIjUiLCAiV2lkdGhDdHJsIjogIiJ9")
 		(property "Reference" "kibuzzard-6435F3C4"
@@ -8805,7 +8805,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J2"
-			(at 0 -2.33 270)
+			(at 0 -2.33 -90)
 			(layer "F.SilkS")
 			(uuid "69ea7fc4-0b03-4c4c-85f1-88b0b71f84a4")
 			(effects
@@ -8816,7 +8816,7 @@
 			)
 		)
 		(property "Value" "SWD"
-			(at 0 9.95 270)
+			(at 0 9.95 -90)
 			(layer "F.Fab")
 			(uuid "6b25025b-8528-4cf9-9021-f4c083fa82c4")
 			(effects
@@ -9031,7 +9031,7 @@
 			(uuid "94f2235d-8ba3-4488-bac9-c38dcb8b5da5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 3.81 360)
+			(at 0 3.81 0)
 			(layer "F.Fab")
 			(uuid "6ad21e74-3a12-458c-8165-5936ddf8823e")
 			(effects
