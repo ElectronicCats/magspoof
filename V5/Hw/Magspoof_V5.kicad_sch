@@ -9396,7 +9396,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C393939"
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9405,7 +9405,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "640-USB4105-GF-A"
+		(property "manf#" " TYPE-C16PIN"
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9414,7 +9414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Proveedor" "MOUSER"
+		(property "Proveedor" "LCSC"
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9799,6 +9799,15 @@
 				(hide yes)
 			)
 		)
+		(property "Proveedor" "LCSC"
+			(at 173.101 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "be668a09-af08-4a79-b909-fb82612c7c88")
 		)
@@ -10141,6 +10150,15 @@
 			)
 		)
 		(property "manf#" "PZ254V-11-02P "
+			(at 116.332 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Proveedor" "LCSC"
 			(at 116.332 107.442 0)
 			(effects
 				(font
