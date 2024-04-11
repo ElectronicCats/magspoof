@@ -122,7 +122,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "Magspoof_V4_Gerbers")
+			(outputdirectory "Magspoof_V5_Gerbers")
 		)
 	)
 	(net 0 "")
@@ -15587,7 +15587,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "Edge.Cuts")
+		(layer "Dwgs.User")
 		(uuid "1ef69247-ca12-4a9f-870c-085bc5a39360")
 		(pts
 			(xy 142.02 33.51) (xy 98.44 33.51)
@@ -15595,7 +15595,7 @@
 		(height 10.29)
 		(gr_text "43.5800 mm"
 			(at 120.23 22.07 0)
-			(layer "Edge.Cuts")
+			(layer "Dwgs.User")
 			(uuid "1ef69247-ca12-4a9f-870c-085bc5a39360")
 			(effects
 				(font
@@ -15620,7 +15620,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "Edge.Cuts")
+		(layer "Dwgs.User")
 		(uuid "20c0dc67-e9e9-4b0d-b0e0-580db3d96cf8")
 		(pts
 			(xy 103.5 66) (xy 103.5 33.5)
@@ -15628,7 +15628,7 @@
 		(height -14.99)
 		(gr_text "32.5000 mm"
 			(at 87.36 49.75 90)
-			(layer "Edge.Cuts")
+			(layer "Dwgs.User")
 			(uuid "20c0dc67-e9e9-4b0d-b0e0-580db3d96cf8")
 			(effects
 				(font
@@ -15653,7 +15653,7 @@
 	)
 	(dimension
 		(type aligned)
-		(layer "Edge.Cuts")
+		(layer "Dwgs.User")
 		(uuid "4d43e8dd-1885-4edb-a452-2937085e229d")
 		(pts
 			(xy 175 61) (xy 98.5 61)
@@ -15661,7 +15661,7 @@
 		(height -17.03)
 		(gr_text "76.5000 mm"
 			(at 136.75 76.88 0)
-			(layer "Edge.Cuts")
+			(layer "Dwgs.User")
 			(uuid "4d43e8dd-1885-4edb-a452-2937085e229d")
 			(effects
 				(font
