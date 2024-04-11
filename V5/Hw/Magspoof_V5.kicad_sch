@@ -6310,7 +6310,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HP02WAF2002TCE"
+		(property "manf#" " AR02BTC5101"
 			(at 49.022 38.1 0)
 			(effects
 				(font
@@ -6415,7 +6415,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0d092452-a28f-4911-83f3-178bc663fcad")
 		(property "Reference" "H1"
@@ -6956,7 +6956,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "207cb308-c1e0-4ab6-9bd5-12ce3c501b56")
 		(property "Reference" "H2"
@@ -7464,7 +7464,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HP02WAF2002TCE"
+		(property "manf#" " AR02BTC5101"
 			(at 44.323 35.56 0)
 			(effects
 				(font
@@ -8447,7 +8447,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6448b3ff-df83-4745-aa5d-40587bbf3ea4")
 		(property "Reference" "L4"
@@ -8638,7 +8638,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HP02WAF2002TCE"
+		(property "manf#" " AR02BTC5101"
 			(at 213.233 36.195 0)
 			(effects
 				(font
@@ -9396,7 +9396,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC#" "C2987386"
+		(property "LCSC#" ""
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9405,7 +9405,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "USB4105-GF-A"
+		(property "manf#" "640-USB4105-GF-A"
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9414,7 +9414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Proveedor" "LCSC"
+		(property "Proveedor" "MOUSER"
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9574,7 +9574,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "89ee4299-466d-4552-849a-989973340066")
 		(property "Reference" "H3"
@@ -10268,7 +10268,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b0a747d7-56b9-4812-893e-6d01809214f3")
 		(property "Reference" "BT1"
 			(at 181.61 39.5478 0)
@@ -10876,7 +10876,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d67cf486-1c4f-4428-8b94-45410e79f2e0")
 		(property "Reference" "H4"
@@ -10940,7 +10940,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e151add3-871c-47e3-9928-60983bcc8283")
 		(property "Reference" "J1"
 			(at 280.924 81.28 0)
@@ -11517,7 +11517,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "JFC0603-0500FS"
+		(property "manf#" "0603FA-R500 "
 			(at 45.339 30.48 0)
 			(effects
 				(font
@@ -11535,7 +11535,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC#" "C136327"
+		(property "LCSC#" "C2838887"
 			(at 45.339 30.48 0)
 			(effects
 				(font
