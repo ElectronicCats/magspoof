@@ -9781,8 +9781,17 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "-"
+		(property "manf#" "HB-PH3-25414PB2GOP "
 			(at -100.965 158.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC#" " C6332197"
+			(at 173.101 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10114,6 +10123,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 116.332 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC#" "C492401"
+			(at 116.332 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manf#" "PZ254V-11-02P "
 			(at 116.332 107.442 0)
 			(effects
 				(font
@@ -10960,7 +10987,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "-"
+		(property "manf#" ""
 			(at 6.1468 112.1664 0)
 			(effects
 				(font
