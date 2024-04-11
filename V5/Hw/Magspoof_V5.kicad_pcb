@@ -1340,7 +1340,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "BT1"
-			(at -1.8 -1.8 180)
+			(at -0.01 4.71 -90)
 			(layer "F.SilkS")
 			(uuid "1cedb607-54db-4cbd-8aee-b692804aa0d5")
 			(effects
