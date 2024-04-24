@@ -13,6 +13,12 @@
 </a>
 </p>
 
+<p align=center>
+<a href="https://labs.ksec.co.uk/product-category/electronic-cat/">
+<img src="https://cdn.ksec.co.uk/ksec-solutions/ksec-W-BW-MV-small-clipped.png" width="200" />
+</a>
+</p>
+
 # What is MagSpoof?
 
 **MagSpoof by Electronic Cats** is a device that can spoof/emulate any magnetic stripe or credit card. It can work "wirelessly", even on **standard magstripe/credit card readers**, by generating a strong electromagnetic field that emulates a traditional magnetic stripe card.
