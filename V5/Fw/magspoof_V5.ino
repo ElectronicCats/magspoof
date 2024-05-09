@@ -1,5 +1,5 @@
 /************************************************************
-  Magspoof V4
+  Magspoof V5
   Modified version by Eduardo Contreras
   for Electronic Cats
 
@@ -24,27 +24,28 @@
 #define PIN_A_BIT 4
 #define PIN_B_BIT 5
 
-#define BUTTON_PIN 11
-#define LED 34
-#define CLOCK_US 200
+#define BUTTON_PIN 11      // Button pin number
+#define LED 34             // LED pin number
+#define CLOCK_US 200       // Clock pulse duration in microseconds
 
 #define BETWEEN_ZERO 53 // 53 zeros between track1 & 2
 
-#define TRACKS 2
-#define MAX 80
+#define TRACKS 2           // Number of magnetic tracks emulated
+#define MAX 80             // Maximum length of each track
+
 //This is a fairly large array, store it in external memory with keyword __xdata
 __xdata char recvStr[MAX];
 uint8_t recvStrPtr = 0;
 bool stringComplete = false;
 uint16_t echoCounter = 0;
 
-// consts get stored in flash as we don't adjust them
+// tracks in RAM
 char tracks[2][MAX] = {
   "%B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?\0", // Track 1
   ";123456781234567=112220100000000000000?\0" // Track 2
 };
 
-char revTrack[41];
+char revTrack[41]; // Array to store reversed track data
 
 int sublen[] = {
   32, 48, 48
@@ -57,6 +58,7 @@ int bitlen[] = {
 unsigned int curTrack = 0;
 uint8_t dir;
 
+// Function to blink an LED on a specific pin
 void blink(uint8_t pin, int msdelay, int times) {
   for (uint8_t i = 0; i < times; i++) {
     digitalWrite(pin, HIGH);
@@ -111,10 +113,6 @@ void playTrack(int track) {
   //
   for (int i = 0; tracks[track][i] != '\0'; i++)
   {
-    //    USBSerial_print(tracks[track][i]);
-    //    USBSerial_print(" (");
-    //    USBSerial_print(i);
-    //    USBSerial_print(") ");
     crc = 1;
     tmp = tracks[track][i] - sublen[track];
 
@@ -127,13 +125,11 @@ void playTrack(int track) {
     }
     playBit(crc);
   }
-
-  delay(5000);
-
-
+  
   // finish calculating and send last "byte" (LRC)
   tmp = lrc;
   crc = 1;
+  
   for (int j = 0; j < bitlen[track] - 1; j++)
   {
     crc ^= tmp & 1;
@@ -225,8 +221,41 @@ void dumpEEPROM() {
   USBSerial_flush();
 }
 
+// Alternative function to control the operation based on input option
+void play(int option){
+  digitalWrite(LED, HIGH);
+
+  switch(option){
+  case 1:
+    // Play track 1
+    playTrack(1);
+    digitalWrite(LED, LOW);
+    //s_print(tracks[0]);
+    USBSerial_println("MagSpoof activated");
+    break;
+  case 2:
+    // Play track 2
+    playTrack(2);
+    digitalWrite(LED, LOW);
+    //s_print(tracks[1]);
+    USBSerial_println("MagSpoof activated");
+    break;
+  case 0:
+    // Play alternating tracks on successive button presses
+    playTrack(1 + (curTrack++ % 2));
+    digitalWrite(LED, LOW);
+    //s_print(tracks[0]);
+    //s_print(tracks[1]);
+    //delay(100);
+    USBSerial_println("MagSpoof activated");
+  }
+}
+
+// Setup function to initialize hardware and load data
 void setup() {
   Serial1_begin(9600);
+
+  delay(5000);
   
   pinMode(LED, OUTPUT);
   digitalWrite(LED, LOW);
@@ -234,6 +263,10 @@ void setup() {
   pinModeFast(PINS_PORT, PIN_A_BIT, OUTPUT);
   pinModeFast(PINS_PORT, PIN_B_BIT, OUTPUT);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
+
+  //load track1 from eeprom
+
+  USBSerial_println("EEPROM track 1:");
 
   for (uint8_t i = 0; i < MAX; i++) {
     char eepromData = eeprom_read_byte(i);
@@ -245,6 +278,10 @@ void setup() {
     }
   }
 
+  //load track2 from eeprom
+  USBSerial_println();
+  USBSerial_println("EEPROM track 2:");
+  
   for (uint8_t i = MAX; i < 2 * MAX; i++) {
     char eepromData = eeprom_read_byte(i);
     tracks[1][i - MAX] = eepromData;
@@ -259,22 +296,23 @@ void setup() {
 
   USBSerial_println();
   USBSerial_flush();
-  USBSerial_println("MagSpoof test");
-
+  USBSerial_println("MAGSPOOF");
+  USBSerial_println();
 }
 
+// Main loop to handle button presses and USB serial commands
 void loop() {
   if (digitalRead(BUTTON_PIN) == 0) {
     USBSerial_println("MagSpoof");
     digitalWrite(LED, HIGH);
-    playTrack(1 + (curTrack++ % 2));
-    delay(500);
+    play(0);
+    //delay(500);
     digitalWrite(LED, LOW);
     s_print(tracks[0]);
     s_print(tracks[1]);
-    delay(1000);
   }
-
+  
+  // Handle incoming serial data
   while (Serial1_available()) {
     char serialChar = Serial1_read();
     USBSerial_write(serialChar);
@@ -317,8 +355,34 @@ void loop() {
     }
   }
 
+  // Play tracks in RAM
+  if (recvStr[0] == 'p') {
+    if(recvStr[1] == '1') {
+    USBSerial_println();  
+    USBSerial_print("PLAY TRACK 1");
+    USBSerial_println();
+    play(1);  
+    }
+    else if(recvStr[1] == '2') {
+    USBSerial_println();  
+    USBSerial_print("PLAY TRACK 2");
+    USBSerial_println();
+    play(2);   
+    }
+    else {
+    USBSerial_println();  
+    USBSerial_print("PLAY");
+    USBSerial_println();
+    play(0);
+    }
+    
+    USBSerial_flush();
+  }
+  
+  // Process complete strings from USB serial
   if (stringComplete) {
 
+  // Store tracks in EEPROM
     if (recvStr[0] == 's') {
 
       USBSerial_println("...to EEPROM");
@@ -329,7 +393,7 @@ void loop() {
         if (tracks[0][i] == '?') {
           eeprom_write_byte(i + 1, '\0');
           tracks[0][i + 1] = '\0';
-          USBSerial_println("? found");
+          //USBSerial_println("? found");
           break;
         }
       }
@@ -339,18 +403,18 @@ void loop() {
         if (tracks[1][i] == '?') {
           eeprom_write_byte(i + 1, '\0');
           tracks[1][i + 1] = '\0';
-          USBSerial_println("? found");
+          //USBSerial_println("? found");
           break;
         }
       }
-      dumpEEPROM();
+      //dumpEEPROM();
     }
 
     if (recvStr[0] == '%') {
       for (uint8_t i = 0; i < MAX ; i++) {
         tracks[0][i] = recvStr[i];
         if (recvStr[i] == '?') {
-          USBSerial_println("? found");
+          //USBSerial_println("? found");
           {
             tracks[0][i + 1] = '\0';
             break;
@@ -364,7 +428,7 @@ void loop() {
       for (uint8_t i = 0; i < MAX ; i++) {
         tracks[1][i] = recvStr[i];
         if (recvStr[i] == '?') {
-          USBSerial_println("? found");
+          //USBSerial_println("? found");
           {
             tracks[1][i + 1] = '\0';
             break;
@@ -373,35 +437,20 @@ void loop() {
       }
       storeRevTrack(TRACKS);
     }
-
-    if (recvStr[0] == 'p') {
-
-      delay(100);
-
-      USBSerial_println("MagSpoof");
-      digitalWrite(LED, HIGH);
-      USBSerial_println("HELL ");
-      
-      playTrack(1 + (curTrack++ % 2));
-      delay(100);
-      digitalWrite(LED, LOW);
-      s_print(tracks[0]);
-      s_print(tracks[1]);
-      delay(100);
-
-    }
-
-
-    //USBSerial_print("ECHO:");
-    //USBSerial_println(recvStr);
-
-    //s_print(tracks[0]);
-    //s_print(tracks[1]);
-    //USBSerial_println();
-
+    
     stringComplete = false;
     recvStrPtr = 0;
 
     USBSerial_flush();
+  }
+
+  // Print tracks stored in RAM
+  if (recvStr[0] == 'd') {   
+  USBSerial_println();     
+  USBSerial_println("RAM TRACK 1:");
+  s_print(tracks[0]);
+  USBSerial_println("RAM TRACK 2:");
+  s_print(tracks[1]);
+  USBSerial_println();
   }
 }
