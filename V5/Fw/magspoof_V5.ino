@@ -37,6 +37,7 @@
 __xdata char recvStr[MAX];
 uint8_t recvStrPtr = 0;
 bool stringComplete = false;
+bool serialComplete = false;
 uint16_t echoCounter = 0;
 
 // tracks in RAM
@@ -120,6 +121,7 @@ void playTrack(int track) {
     {
       crc ^= tmp & 1;
       lrc ^= (tmp & 1) << j;
+      
       playBit(tmp & 1);
       tmp >>= 1;
     }
@@ -253,7 +255,7 @@ void play(int option){
 
 // Setup function to initialize hardware and load data
 void setup() {
-  Serial1_begin(9600);
+  Serial0_begin(9600);
 
   delay(5000);
   
@@ -313,13 +315,13 @@ void loop() {
   }
   
   // Handle incoming serial data
-  while (Serial1_available()) {
-    char serialChar = Serial1_read();
+  while (Serial0_available()) {
+    char serialChar = Serial0_read();
     USBSerial_write(serialChar);
     if ((serialChar == '\n') || (serialChar == '\r') ) {
       recvStr[recvStrPtr] = '\0';
       if (recvStrPtr > 0) {
-        stringComplete = true;
+        serialComplete = true;
         break;
       }
     } else {
@@ -330,7 +332,7 @@ void loop() {
         digitalWrite(LED, HIGH);
         delay(50);
         digitalWrite(LED, LOW);
-        stringComplete = true;
+        serialComplete = true;
         break;
       }
     }
@@ -380,7 +382,7 @@ void loop() {
   }
   
   // Process complete strings from USB serial
-  if (stringComplete) {
+  if (stringComplete || serialComplete) {
 
   // Store tracks in EEPROM
     if (recvStr[0] == 's') {
@@ -407,6 +409,7 @@ void loop() {
           break;
         }
       }
+      serialComplete = false;
       //dumpEEPROM();
     }
 
