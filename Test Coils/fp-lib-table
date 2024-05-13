@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Panelization")(type "KiCad")(uri "${KIPRJMOD}/Panelization/Panelization.pretty")(options "")(descr ""))
+)

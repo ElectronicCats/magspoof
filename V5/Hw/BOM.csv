@@ -1,0 +1,28 @@
+Reference,Value,Datasheet,Footprint,Qty,DNP,LCSC#,Proveedor,manf#
+BT1,Battery_Cell,~,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,DNP,,,-
+"C1,C2",0.1uF,https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf,Capacitor_SMD:C_0402_1005Metric,2,,C2171572,LCSC,GRM022R61A104ME01L
+"C3,C4,C17,C18",10uF,~https://datasheet.lcsc.com/lcsc/1811021421_Samsung-Electro-Mechanics-CL10A106MP8NNNC_C85713.pdf,Capacitor_SMD:C_0402_1005Metric,4,,C315248,LCSC,CL05A106MP5NUNC
+D1,MBR120,http://www.onsemi.com/pub_link/Collateral/MBR340-D.PDF,Diode_SMD:D_SOD-123F,1,,C130880,LCSC,MBR120LSF
+D3,Status,https://www.mouser.mx/datasheet/2/445/150080VS75000-1714385.pdf,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,C205442,LCSC,150080GS75000
+D4,CHG,https://www.mouser.mx/datasheet/2/445/150080RS75000-1714740.pdf,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,,C130114,LCSC,D-R080508L3-KS2
+F1,0.5A,https://datasheet.lcsc.com/lcsc/1809211126_Shenzhen-JDT-Fuse-JFC0603-0500FS_C136327.pdf,Fuse:Fuse_0603_1608Metric,1,,C2838887,LCSC,0603FA-R500 
+"H1,H2,H3,H4",MountingHole,~,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,4,DNP,,,
+J1,SWD,~,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1,DNP,,,
+J2,SWD,~,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1,, C6332197,LCSC,HB-PH3-25414PB2GOP 
+JP1,boot,~,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,,C492401,LCSC,PZ254V-11-02P 
+L4,30t_30mm,,magspoof:Coil_30t_30mm_0.2_0.2_0.6_0.3,1,DNP,,,
+P1,USB_C_Plug_USB2.0,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,magspoof:C393939,1,,C393939,LCSC, TYPE-C16PIN
+Q1,DMG3415U-7,https://www.mouser.mx/datasheet/2/115/ds31735-64958.pdf,Package_TO_SOT_SMD:SOT-23,1,,C96616,LCSC,DMG3415UQ-7
+R1,20K,https://www.mouser.mx/datasheet/2/54/cr-1858361.pdf,Resistor_SMD:R_0402_1005Metric,1,,C2759509,LCSC,ERJ-H2RD2002X
+"R2,R3,R9",5.1k,https://datasheet.lcsc.com/lcsc/1810170519_PANASONIC-ERJ3RBD5101V_C191782.pdf,Resistor_SMD:R_0402_1005Metric,3,,C317922,LCSC, AR02BTC5101
+R7,180R,https://www.mouser.mx/datasheet/2/219/RK73B-1825463.pdf,Resistor_SMD:R_0402_1005Metric,1,,C138045,LCSC,ERJ-2RKF1800X
+R10,470,https://www.mouser.mx/datasheet/2/447/PYu_RC_Group_51_RoHS_L_11-1984063.pdf,Resistor_SMD:R_0402_1005Metric,1,,C114877,LCSC,RC0402FR-07470RL
+R11,100K,https://datasheet.lcsc.com/lcsc/1811151133_Walsin-Tech-Corp-WR06X104JTL_C163843.pdf,Resistor_SMD:R_0402_1005Metric,1,,C192169,LCSC,ERJ-2RKF1003X
+SW1,ON,https://datasheet.lcsc.com/lcsc/1808041445_ALPSALPINE-SSSS811101_C109335.pdf,Library:SW-SMD_SSSS811101,1,,C109335,LCSC,SSSS811101
+SW3,S1,https://datasheet.lcsc.com/lcsc/2205161616_E-Switch-TL3342F450QG_C2886897.pdf,Button_Switch_SMD:SW_SPST_TL3342,1,,C318889,LCSC,TL3342F450QG
+SW4,SOURCE MAG,https://datasheet.lcsc.com/lcsc/1808041445_ALPSALPINE-SSSS811101_C109335.pdf,Library:SW-SMD_SSSS811101,1,,C109335,LCSC,SSSS811101
+SW5,RESET,https://www.mouser.mx/datasheet/2/140/TL3342-2065746.pdf,Button_Switch_SMD:SW_SPST_TL3342,1,,C318889,LCSC,TL3342F450QG
+U1,CH552G,https://datasheet.lcsc.com/lcsc/2008191734_WCH-Jiangsu-Qin-Heng-CH552G_C111292.pdf,Package_SO:SOP-16_4.55x10.3mm_P1.27mm,1,,C111292,LCSC,CH552G
+U2,AP2112K-3.3,https://www.diodes.com/assets/Datasheets/AP2112.pdf,Package_TO_SOT_SMD:SOT-23-5,1,,C47773,LCSC,RT9013-33GB
+U3,TC4424,https://www.mouser.mx/datasheet/2/268/21998b-53545.pdf,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,1,,C44150,LCSC,TC4424AVOA713
+U5,MCP73831,http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf,Package_TO_SOT_SMD:SOT-23-5,1,,C424093,LCSC,MCP73831T-2ACI/OT

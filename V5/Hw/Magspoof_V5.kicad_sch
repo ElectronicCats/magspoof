@@ -4352,7 +4352,7 @@
 		(uuid "38807883-294e-467d-80d1-4fb98e52019a")
 	)
 	(junction
-		(at 58.801 97.79)
+		(at 49.53 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a16e4a6-3f0c-4726-b170-6da684f6b6c3")
@@ -4388,13 +4388,13 @@
 		(uuid "d65d65df-fa82-416b-840b-21cddcb57802")
 	)
 	(junction
-		(at 55.626 97.663)
+		(at 46.355 97.663)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e95c1cd6-40c5-4ab5-9c91-8c614b30ca93")
 	)
 	(junction
-		(at 53.34 104.14)
+		(at 44.069 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea7ef59e-0aba-42d9-9135-248b2f16d678")
@@ -4406,11 +4406,7 @@
 		(uuid "f11b8b95-ffb7-43c0-82f9-37951e9a9a1d")
 	)
 	(no_connect
-		(at 79.121 120.65)
-		(uuid "1444cd69-4b9c-4020-aecf-1ed10674e731")
-	)
-	(no_connect
-		(at 79.121 113.03)
+		(at 69.85 113.03)
 		(uuid "53c9f351-214a-4d72-9539-37e3ff3f9653")
 	)
 	(no_connect
@@ -4418,16 +4414,12 @@
 		(uuid "6a8c5908-7818-40a2-9f38-78c0cdf98bf8")
 	)
 	(no_connect
-		(at 79.121 115.57)
+		(at 69.85 115.57)
 		(uuid "6b095f92-4cfb-4bb6-9232-4880b672f5c4")
 	)
 	(no_connect
 		(at 229.489 70.866)
 		(uuid "c1798d70-02bf-4c94-a110-121ee23217d9")
-	)
-	(no_connect
-		(at 79.121 118.11)
-		(uuid "e9cf24bd-ab60-42e6-ab0d-1c85ddd42acd")
 	)
 	(wire
 		(pts
@@ -4451,7 +4443,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 97.663) (xy 55.626 97.663)
+			(xy 40.259 97.663) (xy 46.355 97.663)
 		)
 		(stroke
 			(width 0)
@@ -4501,6 +4493,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 36.83) (xy 147.32 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11495c8f-5d02-493a-b51d-1f5ec033ca1c")
+	)
+	(wire
+		(pts
 			(xy 97.79 36.957) (xy 101.6 36.957)
 		)
 		(stroke
@@ -4538,16 +4540,6 @@
 			(type default)
 		)
 		(uuid "19cf5319-b280-444a-81c1-8abe7c87c280")
-	)
-	(wire
-		(pts
-			(xy 147.32 36.322) (xy 147.32 39.243)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fda9751-b38e-4405-aa35-480f4f5cedd9")
 	)
 	(wire
 		(pts
@@ -4591,7 +4583,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.121 101.6) (xy 82.931 101.6)
+			(xy 69.85 101.6) (xy 73.66 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4649,16 +4641,6 @@
 		)
 		(uuid "323bfbd6-943d-40d5-b4ee-3bf2e70fd98d")
 	)
-	(wire
-		(pts
-			(xy 147.32 46.863) (xy 147.32 48.768)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c8ab68c-9377-4bca-abfb-ad704975b5d4")
-	)
 	(polyline
 		(pts
 			(xy 247.0658 102.2096) (xy 285.7246 102.2096)
@@ -4668,6 +4650,16 @@
 			(type default)
 		)
 		(uuid "3dc3cd65-1c11-4511-bc27-a2ae247920a8")
+	)
+	(wire
+		(pts
+			(xy 163.83 134.747) (xy 163.83 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41071da0-5ea7-4579-9350-1c542ffd407b")
 	)
 	(wire
 		(pts
@@ -4701,7 +4693,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.121 105.41) (xy 82.169 105.41)
+			(xy 69.85 105.41) (xy 72.898 105.41)
 		)
 		(stroke
 			(width 0)
@@ -4721,16 +4713,6 @@
 	)
 	(wire
 		(pts
-			(xy 79.121 93.98) (xy 81.788 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "488dc2f2-1cbb-4c83-9dd6-7f47d6568b65")
-	)
-	(wire
-		(pts
 			(xy 121.412 107.442) (xy 123.444 107.442)
 		)
 		(stroke
@@ -4741,7 +4723,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 97.663) (xy 49.53 104.14)
+			(xy 40.259 97.663) (xy 40.259 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4899,6 +4881,16 @@
 		)
 		(uuid "630a8fd1-5a32-48c7-9643-f9a9898befaf")
 	)
+	(wire
+		(pts
+			(xy 164.084 124.46) (xy 164.084 121.412)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "661cff7d-1f38-4341-86c7-be5bd63af6fa")
+	)
 	(polyline
 		(pts
 			(xy 260.477 102.2604) (xy 260.477 59.5884)
@@ -4961,7 +4953,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.121 110.49) (xy 82.55 110.49)
+			(xy 69.85 110.49) (xy 73.279 110.49)
 		)
 		(stroke
 			(width 0)
@@ -4971,7 +4963,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.626 97.79) (xy 58.801 97.79)
+			(xy 69.85 118.11) (xy 72.39 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72ac36bd-72fb-4afe-a286-22c81577633c")
+	)
+	(wire
+		(pts
+			(xy 46.355 97.79) (xy 49.53 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4998,6 +5000,16 @@
 			(type default)
 		)
 		(uuid "7470754b-6182-4888-90a0-9acff20ae00c")
+	)
+	(wire
+		(pts
+			(xy 69.85 91.44) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766bbf85-2ef6-4237-a4c3-962ae638dc0a")
 	)
 	(wire
 		(pts
@@ -5041,7 +5053,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 109.22) (xy 53.34 110.109)
+			(xy 44.069 109.22) (xy 44.069 110.109)
 		)
 		(stroke
 			(width 0)
@@ -5061,13 +5073,13 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 26.162) (xy 147.32 28.702)
+			(xy 147.32 26.67) (xy 147.32 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83048ddd-4eee-4f42-8336-80f15525b81d")
+		(uuid "85f00016-3cc0-42a9-84d2-90da12673e4b")
 	)
 	(wire
 		(pts
@@ -5081,13 +5093,23 @@
 	)
 	(wire
 		(pts
-			(xy 55.626 97.663) (xy 55.626 96.901)
+			(xy 46.355 97.663) (xy 46.355 96.901)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "89cad345-1ae9-4e8e-b75c-5dabba786c46")
+	)
+	(wire
+		(pts
+			(xy 164.084 127) (xy 168.021 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89f0691a-57b8-4fc0-91bd-ddca614c3d2a")
 	)
 	(polyline
 		(pts
@@ -5098,6 +5120,16 @@
 			(type default)
 		)
 		(uuid "8b344d08-0b89-45c7-83d1-b12086bfdc79")
+	)
+	(wire
+		(pts
+			(xy 168.021 124.46) (xy 164.084 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cc663d8-907b-4f65-877c-2e2786f889d5")
 	)
 	(wire
 		(pts
@@ -5118,16 +5150,6 @@
 			(type default)
 		)
 		(uuid "919c2c0c-9a2c-4e6f-983d-f26bcb83d21e")
-	)
-	(wire
-		(pts
-			(xy 79.121 91.44) (xy 81.788 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92adf61c-a904-40f4-a66c-229b15a54c8b")
 	)
 	(polyline
 		(pts
@@ -5221,7 +5243,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.611 97.79) (xy 58.801 97.79)
+			(xy 53.34 97.79) (xy 49.53 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5241,7 +5263,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.121 96.52) (xy 81.788 96.52)
+			(xy 69.85 96.52) (xy 72.517 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5251,7 +5273,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.801 118.11) (xy 58.801 119.634)
+			(xy 49.53 118.11) (xy 49.53 119.634)
 		)
 		(stroke
 			(width 0)
@@ -5261,7 +5283,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 104.14) (xy 49.53 104.14)
+			(xy 44.069 104.14) (xy 40.259 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5271,7 +5293,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.611 91.44) (xy 58.42 91.44)
+			(xy 53.34 91.44) (xy 49.149 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5288,6 +5310,16 @@
 			(type default)
 		)
 		(uuid "b77909dc-f19e-4981-9aeb-579b1d3fd127")
+	)
+	(wire
+		(pts
+			(xy 69.85 93.98) (xy 72.39 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b85b7214-e73d-4e40-9931-347633715eb9")
 	)
 	(wire
 		(pts
@@ -5311,6 +5343,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 132.08) (xy 168.021 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc28366f-42ee-4f59-ae82-d3de04e4bf76")
+	)
+	(wire
+		(pts
 			(xy 109.22 47.117) (xy 109.22 50.292)
 		)
 		(stroke
@@ -5331,7 +5373,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.611 104.14) (xy 53.34 104.14)
+			(xy 53.34 104.14) (xy 44.069 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5391,7 +5433,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.801 102.87) (xy 58.801 110.236)
+			(xy 49.53 102.87) (xy 49.53 110.236)
 		)
 		(stroke
 			(width 0)
@@ -5421,7 +5463,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.611 118.11) (xy 58.801 118.11)
+			(xy 53.34 118.11) (xy 49.53 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5438,6 +5480,16 @@
 			(type default)
 		)
 		(uuid "e5aff87b-f45f-4f14-8b95-8e8c0468782e")
+	)
+	(wire
+		(pts
+			(xy 69.85 120.65) (xy 72.39 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5fcb868-0b44-4de3-870a-b58fe52a8895")
 	)
 	(wire
 		(pts
@@ -5481,13 +5533,23 @@
 	)
 	(wire
 		(pts
-			(xy 55.626 97.79) (xy 55.626 97.663)
+			(xy 46.355 97.79) (xy 46.355 97.663)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ef347671-c56d-4d3e-813a-f48a2086b90e")
+	)
+	(wire
+		(pts
+			(xy 168.021 129.54) (xy 164.084 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f12c4548-e36d-4efe-9078-8bd1f6b73550")
 	)
 	(wire
 		(pts
@@ -5498,6 +5560,16 @@
 			(type default)
 		)
 		(uuid "f1d23f8c-a110-4e1d-974d-2c1f78066f5e")
+	)
+	(wire
+		(pts
+			(xy 147.32 46.99) (xy 147.32 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bef748-29f8-40f1-bf20-ac197d9108ea")
 	)
 	(wire
 		(pts
@@ -5531,7 +5603,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.121 99.06) (xy 81.788 99.06)
+			(xy 69.85 99.06) (xy 72.517 99.06)
 		)
 		(stroke
 			(width 0)
@@ -5571,7 +5643,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.121 107.95) (xy 82.423 107.95)
+			(xy 69.85 107.95) (xy 73.152 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5601,14 +5673,14 @@
 		)
 		(uuid "3610224e-939b-4d99-afdf-96e92f618fc6")
 	)
-	(text "SWD"
+	(text "Serial\nBoot"
 		(exclude_from_sim no)
-		(at 267.7668 66.4464 0)
+		(at 272.796 68.834 0)
 		(effects
 			(font
 				(size 2.9972 2.9972)
 			)
-			(justify left bottom)
+			(justify bottom)
 		)
 		(uuid "742334d9-c018-4635-9dfe-1a1263aa393d")
 	)
@@ -5667,8 +5739,19 @@
 		)
 		(uuid "b5231ed8-7897-41e0-af56-4a5eae21e30f")
 	)
+	(text "Serial\nReader"
+		(exclude_from_sim no)
+		(at 165.6842 115.1636 0)
+		(effects
+			(font
+				(size 2.9972 2.9972)
+			)
+			(justify bottom)
+		)
+		(uuid "d965d8fb-da7b-4af7-ac96-86fa4885ef8c")
+	)
 	(label "D-"
-		(at 82.169 105.41 0)
+		(at 72.898 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5679,7 +5762,7 @@
 		(uuid "0a05b7ee-3630-41e3-a43f-7b4c976c7cbd")
 	)
 	(label "IN_B"
-		(at 81.788 96.52 0)
+		(at 72.517 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5690,7 +5773,7 @@
 		(uuid "11451182-4907-4cd8-895f-13f17833984f")
 	)
 	(label "SW1"
-		(at 82.931 101.6 0)
+		(at 73.66 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5700,8 +5783,8 @@
 		)
 		(uuid "1c1cc223-a2b5-458b-a0ae-6ef2209c145c")
 	)
-	(label "Out_B"
-		(at 226.06 100.33 0)
+	(label "RXD_BOOT"
+		(at 72.39 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5709,21 +5792,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "24903641-6459-42c5-a28d-54228778a567")
-	)
-	(label "Out_A"
-		(at 226.06 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "27d3344c-ea5c-4146-924d-625a741ccd5e")
+		(uuid "2f4c0fad-bf21-4de8-8ed8-56ec5374e9dd")
 	)
 	(label "D+"
-		(at 82.423 107.95 0)
+		(at 73.152 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5733,30 +5805,8 @@
 		)
 		(uuid "371a78f1-50f9-43f1-be3c-7d333b59f78e")
 	)
-	(label "Out_B"
-		(at 187.96 100.33 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3bbfc713-09b6-41ef-854b-cda08d7d7133")
-	)
-	(label "Out_A"
-		(at 207.01 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3eff33dc-ddf6-4b15-b948-90c7ac941164")
-	)
 	(label "LED"
-		(at 82.55 110.49 0)
+		(at 73.279 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5777,18 +5827,18 @@
 		)
 		(uuid "4461498a-ef6d-4cb5-b147-eb46e59b18e9")
 	)
-	(label "Out_B"
-		(at 207.01 100.33 0)
+	(label "TXD"
+		(at 164.084 127 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "59f0e67b-5946-46a2-8d7f-a57baa2f61d5")
+		(uuid "60e8cf90-6609-4a9d-8c76-84250c36204a")
 	)
-	(label "RXD"
+	(label "RXD_BOOT"
 		(at 271.1958 83.2104 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5799,19 +5849,8 @@
 		)
 		(uuid "6e545e88-c44a-4ae6-9283-b5d08610a9d6")
 	)
-	(label "Out_A"
-		(at 187.96 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "75ae9d24-656a-4b71-874c-ec8d8084a164")
-	)
 	(label "LED"
-		(at 147.32 26.162 0)
+		(at 147.32 26.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5909,7 +5948,18 @@
 		)
 		(uuid "a892d24b-0127-4473-a0f4-7005f2c4904a")
 	)
-	(label "TXD"
+	(label "RXD"
+		(at 164.084 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ab0316e6-439d-4886-9b86-fdb4b1bc9938")
+	)
+	(label "TXD_BOOT"
 		(at 271.1958 80.6704 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5921,7 +5971,7 @@
 		(uuid "ae4c0179-f871-4122-a461-a40eac0537f9")
 	)
 	(label "RXD"
-		(at 81.788 93.98 0)
+		(at 72.39 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5932,7 +5982,7 @@
 		(uuid "afb3cfef-c03e-41fb-9d63-92abdb7b094c")
 	)
 	(label "RST"
-		(at 58.42 91.44 0)
+		(at 49.149 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5953,8 +6003,19 @@
 		)
 		(uuid "b92b1bb7-5a8c-45c5-99a5-e830afee0c44")
 	)
+	(label "TXD_BOOT"
+		(at 72.39 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca54b5e1-3c9b-46b3-9220-e4fa6a7292b1")
+	)
 	(label "TXD"
-		(at 81.788 91.44 0)
+		(at 72.39 118.11 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5965,7 +6026,7 @@
 		(uuid "dc5e36de-1e6a-46c1-8162-f85c99dafc87")
 	)
 	(label "IN_A"
-		(at 81.788 99.06 0)
+		(at 72.517 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5988,7 +6049,7 @@
 	)
 	(symbol
 		(lib_id "electroniccats:CH552G")
-		(at 70.231 96.52 0)
+		(at 60.96 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5997,7 +6058,7 @@
 		(fields_autoplaced yes)
 		(uuid "01919f31-e999-4ffe-a0c4-fdbae962acde")
 		(property "Reference" "U1"
-			(at 70.866 84.455 0)
+			(at 61.595 84.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6005,7 +6066,7 @@
 			)
 		)
 		(property "Value" "CH552G"
-			(at 70.866 86.995 0)
+			(at 61.595 86.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6013,7 +6074,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOP-16_4.55x10.3mm_P1.27mm"
-			(at 70.231 96.52 0)
+			(at 60.96 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6022,7 +6083,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2008191734_WCH-Jiangsu-Qin-Heng-CH552G_C111292.pdf"
-			(at 70.231 96.52 0)
+			(at 60.96 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6031,7 +6092,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 70.231 96.52 0)
+			(at 60.96 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6040,7 +6101,7 @@
 			)
 		)
 		(property "LCSC#" "C111292"
-			(at 70.231 96.52 0)
+			(at 60.96 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6049,7 +6110,7 @@
 			)
 		)
 		(property "Proveedor" "LCSC"
-			(at 70.231 96.52 0)
+			(at 60.96 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6058,7 +6119,7 @@
 			)
 		)
 		(property "manf#" "CH552G"
-			(at 70.231 96.52 0)
+			(at 60.96 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6115,7 +6176,7 @@
 			(uuid "22776dc2-e01b-4366-8d0f-a2a245618188")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U1")
 					(unit 1)
@@ -6125,7 +6186,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 110.109 0)
+		(at 44.069 110.109 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6133,7 +6194,7 @@
 		(dnp no)
 		(uuid "0623f226-cb68-4af6-8a78-51ab6739f399")
 		(property "Reference" "#PWR0103"
-			(at 53.34 116.459 0)
+			(at 44.069 116.459 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6142,7 +6203,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.467 114.5032 0)
+			(at 44.196 114.5032 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6150,7 +6211,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 110.109 0)
+			(at 44.069 110.109 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6159,7 +6220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 110.109 0)
+			(at 44.069 110.109 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6168,7 +6229,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 110.109 0)
+			(at 44.069 110.109 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6180,7 +6241,7 @@
 			(uuid "93b8a319-cd0c-4056-a451-197d9ea5a860")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0103")
 					(unit 1)
@@ -6249,7 +6310,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HP02WAF2002TCE"
+		(property "manf#" " AR02BTC5101"
 			(at 49.022 38.1 0)
 			(effects
 				(font
@@ -6274,7 +6335,7 @@
 			(uuid "935a90d6-19b5-4276-b392-64f09066fbf3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R3")
 					(unit 1)
@@ -6339,7 +6400,7 @@
 			(uuid "426b5f8a-c420-4053-ac02-0c346d313d46")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR057")
 					(unit 1)
@@ -6354,7 +6415,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0d092452-a28f-4911-83f3-178bc663fcad")
 		(property "Reference" "H1"
@@ -6375,7 +6436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 189.865 107.442 0)
 			(effects
 				(font
@@ -6403,7 +6464,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H1")
 					(unit 1)
@@ -6515,7 +6576,7 @@
 			(uuid "04065519-3f19-4c28-bd64-3988c8050cae")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U3")
 					(unit 1)
@@ -6580,7 +6641,7 @@
 			(uuid "a4e9c699-e67e-4ead-8895-0d98e7a440cf")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR012")
 					(unit 1)
@@ -6645,7 +6706,7 @@
 			(uuid "be16835b-8cf5-4e27-beab-0a7ab9adc287")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR049")
 					(unit 1)
@@ -6710,7 +6771,7 @@
 			(uuid "ce99fcec-445c-4d9f-a533-8204594d97e4")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR062")
 					(unit 1)
@@ -6815,79 +6876,9 @@
 			(uuid "6cef8439-60ed-47e5-bebb-62d5dade7e6b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
-		(at 229.87 95.25 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ed7393c-d441-4a5c-aeaf-14382ea349b1")
-		(property "Reference" "L2"
-			(at 229.87 94.6149 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "25t_30mm"
-			(at 229.87 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "magspoof:Coil_25t_30mm_0.2_0.2_0.6_0.3"
-			(at 229.87 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a5b92749-f4ad-4787-8f18-a3323c2f5a7e")
-		)
-		(pin "1"
-			(uuid "3d789618-29ac-4893-8beb-569035ea35c5")
-		)
-		(instances
-			(project "Magspoof_V4"
-				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
-					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -6950,7 +6941,7 @@
 			(uuid "0c1a0afb-720d-40b5-a4e6-fd217f43c54b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR050")
 					(unit 1)
@@ -6965,7 +6956,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "207cb308-c1e0-4ab6-9bd5-12ce3c501b56")
 		(property "Reference" "H2"
@@ -6986,7 +6977,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 189.865 115.443 0)
 			(effects
 				(font
@@ -7014,7 +7005,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H2")
 					(unit 1)
@@ -7113,7 +7104,7 @@
 			(uuid "15ba837b-bc1a-41a9-b1ce-a868de5cc3a9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "Q1")
 					(unit 1)
@@ -7209,7 +7200,7 @@
 			(uuid "5ab4ce3b-0970-4b5b-a686-d9df52ed0b9e")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW3")
 					(unit 1)
@@ -7219,7 +7210,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 48.768 0)
+		(at 147.32 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7227,7 +7218,7 @@
 		(dnp no)
 		(uuid "2701efdc-6d89-4f3d-ac98-75894d7a41dc")
 		(property "Reference" "#PWR033"
-			(at 147.32 55.118 0)
+			(at 147.32 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7236,7 +7227,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.447 53.1622 0)
+			(at 147.447 53.9242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7244,7 +7235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 48.768 0)
+			(at 147.32 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7253,7 +7244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 48.768 0)
+			(at 147.32 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7262,7 +7253,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 48.768 0)
+			(at 147.32 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7274,7 +7265,7 @@
 			(uuid "eb4fe616-8347-4916-8411-8d9d73986694")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR033")
 					(unit 1)
@@ -7339,7 +7330,7 @@
 			(uuid "f0240cbf-60bd-457d-8fdd-15d3b8f631b9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR063")
 					(unit 1)
@@ -7404,7 +7395,7 @@
 			(uuid "c1046c72-aa0a-40ac-9da2-4a161de15af6")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR061")
 					(unit 1)
@@ -7473,7 +7464,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HP02WAF2002TCE"
+		(property "manf#" " AR02BTC5101"
 			(at 44.323 35.56 0)
 			(effects
 				(font
@@ -7498,7 +7489,7 @@
 			(uuid "a7b59b17-dc79-46be-87b1-941ebe4b0861")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R2")
 					(unit 1)
@@ -7594,7 +7585,7 @@
 			(uuid "1a7f4ee7-1bb2-4ea1-bca9-5f4977cb7064")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C4")
 					(unit 1)
@@ -7688,7 +7679,7 @@
 			(uuid "2d3c086e-d4bb-43ec-a32e-8a4e013fd4a5")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R1")
 					(unit 1)
@@ -7753,7 +7744,7 @@
 			(uuid "10e8af27-306e-4933-8c62-065060b17a4b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0101")
 					(unit 1)
@@ -7762,16 +7753,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 58.801 119.634 0)
+		(lib_id "power:+3V3")
+		(at 164.084 121.412 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "44348102-3b5d-4534-bdd9-a3f6100eaf1a")
-		(property "Reference" "#PWR0105"
-			(at 58.801 125.984 0)
+		(uuid "4294211a-7aae-45fc-b31b-9742753866b0")
+		(property "Reference" "#PWR03"
+			(at 164.084 125.222 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7779,8 +7770,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 58.928 124.0282 0)
+		(property "Value" "+3V3"
+			(at 164.465 117.0178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7788,7 +7779,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.801 119.634 0)
+			(at 164.084 121.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7797,7 +7788,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.801 119.634 0)
+			(at 164.084 121.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7806,7 +7797,72 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.801 119.634 0)
+			(at 164.084 121.412 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96815a30-4981-4be9-94b3-843e24d70a17")
+		)
+		(instances
+			(project "Magspoof_V5"
+				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 119.634 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44348102-3b5d-4534-bdd9-a3f6100eaf1a")
+		(property "Reference" "#PWR0105"
+			(at 49.53 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.657 124.0282 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 119.634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7818,7 +7874,7 @@
 			(uuid "bbb4b69b-0e40-430b-9ad1-3cfe2c3d5d37")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0105")
 					(unit 1)
@@ -7883,7 +7939,7 @@
 			(uuid "98fbf54d-3179-47e1-80d7-7c78a4ee7a5f")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR07")
 					(unit 1)
@@ -7948,7 +8004,7 @@
 			(uuid "92bc1bbc-9ba0-4822-bd32-ca04af29207c")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR055")
 					(unit 1)
@@ -8013,7 +8069,7 @@
 			(uuid "7ff88e39-008e-476b-b216-966a8089af00")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR064")
 					(unit 1)
@@ -8116,7 +8172,7 @@
 			(uuid "7c18bee5-d74f-48b4-9769-7de872dfb679")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "U2")
 					(unit 1)
@@ -8181,7 +8237,7 @@
 			(uuid "a3d4f37a-f84b-4c59-a500-0adbae14bb47")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR056")
 					(unit 1)
@@ -8246,7 +8302,7 @@
 			(uuid "6745a6ad-5b89-4d7c-ac80-f3b0071b3279")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR059")
 					(unit 1)
@@ -8311,7 +8367,7 @@
 			(uuid "5f5032f2-0b00-4fa8-82b8-80e92e472205")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR045")
 					(unit 1)
@@ -8321,7 +8377,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 55.626 96.901 0)
+		(at 46.355 96.901 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8329,7 +8385,7 @@
 		(dnp no)
 		(uuid "5fc54333-9041-4b8a-9342-09066553f099")
 		(property "Reference" "#PWR0102"
-			(at 55.626 100.711 0)
+			(at 46.355 100.711 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8338,7 +8394,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 56.007 92.5068 0)
+			(at 46.736 92.5068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8346,7 +8402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.626 96.901 0)
+			(at 46.355 96.901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8355,7 +8411,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.626 96.901 0)
+			(at 46.355 96.901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8364,7 +8420,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.626 96.901 0)
+			(at 46.355 96.901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8376,7 +8432,7 @@
 			(uuid "ee4f5221-b7e1-47d1-ba2e-987fa4fa1b9e")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0102")
 					(unit 1)
@@ -8391,7 +8447,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6448b3ff-df83-4745-aa5d-40587bbf3ea4")
 		(property "Reference" "L4"
@@ -8446,7 +8502,7 @@
 			(uuid "d9e6a90a-0017-4300-a62a-126ae6dc04c0")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "L4")
 					(unit 1)
@@ -8511,7 +8567,7 @@
 			(uuid "6cdf32c5-43dd-48a4-969b-3cb91ce08a33")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR05")
 					(unit 1)
@@ -8582,7 +8638,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HP02WAF2002TCE"
+		(property "manf#" " AR02BTC5101"
 			(at 213.233 36.195 0)
 			(effects
 				(font
@@ -8607,7 +8663,7 @@
 			(uuid "c98e0180-f3a9-4b32-be9c-2ccc58d24344")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R9")
 					(unit 1)
@@ -8616,78 +8672,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
-		(at 210.82 95.25 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "752d0499-9a39-42e0-9735-eb4bb0396f10")
-		(property "Reference" "L3"
-			(at 210.82 94.6149 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "30t_35mm"
-			(at 210.82 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "magspoof:Coil_30t_35mm_0.2_0.2_0.6_0.3"
-			(at 210.82 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6cb0c983-e959-4fa0-a3f9-9af819e62f8f")
-		)
-		(pin "1"
-			(uuid "e698c94c-5789-4995-9953-37f582e8a7d2")
-		)
-		(instances
-			(project "Magspoof_V4"
-				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
-					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 147.32 43.053 0)
+		(at 147.32 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8695,7 +8681,7 @@
 		(dnp no)
 		(uuid "76a213b6-6583-41fb-9060-f08c0beaba57")
 		(property "Reference" "R7"
-			(at 149.098 41.8846 0)
+			(at 149.098 31.8516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8704,7 +8690,7 @@
 			)
 		)
 		(property "Value" "180R"
-			(at 149.098 44.196 0)
+			(at 149.098 34.163 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8713,7 +8699,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 145.542 43.053 90)
+			(at 145.542 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8722,7 +8708,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.mx/datasheet/2/219/RK73B-1825463.pdf"
-			(at 147.32 43.053 0)
+			(at 147.32 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8731,7 +8717,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 43.053 0)
+			(at 147.32 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8740,7 +8726,7 @@
 			)
 		)
 		(property "manf#" "ERJ-2RKF1800X"
-			(at -112.903 117.856 0)
+			(at -112.903 107.823 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8749,7 +8735,7 @@
 			)
 		)
 		(property "LCSC#" "C138045"
-			(at 147.32 43.053 0)
+			(at 147.32 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8758,7 +8744,7 @@
 			)
 		)
 		(property "Proveedor" "LCSC"
-			(at 147.32 43.053 0)
+			(at 147.32 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8773,7 +8759,7 @@
 			(uuid "0f43f72a-7b84-441e-96f6-a398b4f5160f")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R7")
 					(unit 1)
@@ -8838,7 +8824,7 @@
 			(uuid "af05eeae-0976-43bd-85e3-b71102fc11b6")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR04")
 					(unit 1)
@@ -8848,7 +8834,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 53.34 106.68 0)
+		(at 44.069 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8856,7 +8842,7 @@
 		(dnp no)
 		(uuid "7a38a5f0-fc58-4772-a0a9-eba3cf292351")
 		(property "Reference" "C1"
-			(at 48.895 105.918 0)
+			(at 39.624 105.918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8865,7 +8851,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 46.99 108.585 0)
+			(at 37.719 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8874,7 +8860,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 53.34 106.68 0)
+			(at 44.069 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8883,7 +8869,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf"
-			(at 53.34 106.68 0)
+			(at 44.069 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8892,7 +8878,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 106.68 0)
+			(at 44.069 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8901,7 +8887,7 @@
 			)
 		)
 		(property "manf#" "GRM022R61A104ME01L"
-			(at 53.34 106.68 0)
+			(at 44.069 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8910,7 +8896,7 @@
 			)
 		)
 		(property "LCSC#" "C2171572"
-			(at 53.34 106.68 0)
+			(at 44.069 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8919,7 +8905,7 @@
 			)
 		)
 		(property "Proveedor" "LCSC"
-			(at 53.34 106.68 0)
+			(at 44.069 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8934,7 +8920,7 @@
 			(uuid "0a7e7737-6c8a-42a9-81fc-734eee98c840")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C1")
 					(unit 1)
@@ -9030,9 +9016,74 @@
 			(uuid "3e5e4dcc-c50b-4d53-9db7-825ea1ba8288")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 134.747 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80c8cd03-da70-4379-a81a-404f3fedf237")
+		(property "Reference" "#PWR01"
+			(at 163.83 141.097 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.957 139.1412 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 134.747 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 134.747 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 163.83 134.747 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d56d2183-1562-4ede-a342-115380db4abb")
+		)
+		(instances
+			(project "Magspoof_V5"
+				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9126,7 +9177,7 @@
 			(uuid "f70eaade-7a26-4e06-b93b-c18d2cb248d2")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R10")
 					(unit 1)
@@ -9220,78 +9271,9 @@
 			(uuid "44d1efd1-bd6e-4e62-a144-00f06fb43c5b")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Magspoof:Coil_20t_35mm_0.2_0.6_0.3")
-		(at 191.77 95.25 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "832ed39e-8bd0-44c2-bf50-89d99f1d8611")
-		(property "Reference" "L1"
-			(at 191.77 94.6149 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "20t_35mm"
-			(at 191.77 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Library:Coil_20t_35mm_0.2_0.2_0.6_0.3"
-			(at 180.594 95.504 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 191.77 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "16534cd0-79b2-4610-bf04-efcea1746a24")
-		)
-		(pin "1"
-			(uuid "9104ac9c-edbc-4508-b026-e7907de49dba")
-		)
-		(instances
-			(project "Magspoof_V4"
-				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
-					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -9354,7 +9336,7 @@
 			(uuid "c563e626-30a0-4387-9ff3-b36b52af068a")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR017")
 					(unit 1)
@@ -9387,7 +9369,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connectors:C393939"
+		(property "Footprint" "magspoof:C393939"
 			(at 28.956 45.72 0)
 			(effects
 				(font
@@ -9414,7 +9396,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC#" "C2987386"
+		(property "LCSC#" "C393939"
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9423,7 +9405,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "USB4105-GF-A"
+		(property "manf#" " TYPE-C16PIN"
 			(at 25.146 45.72 0)
 			(effects
 				(font
@@ -9481,7 +9463,7 @@
 			(uuid "7e232a37-a0ff-447f-9dd7-188168bc0ee2")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "P1")
 					(unit 1)
@@ -9577,7 +9559,7 @@
 			(uuid "41543586-e774-4cbe-89ac-5ca53ccec2c1")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "D4")
 					(unit 1)
@@ -9592,7 +9574,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "89ee4299-466d-4552-849a-989973340066")
 		(property "Reference" "H3"
@@ -9613,7 +9595,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 190.119 124.079 0)
 			(effects
 				(font
@@ -9641,7 +9623,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H3")
 					(unit 1)
@@ -9651,7 +9633,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 147.32 32.512 90)
+		(at 147.32 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9659,7 +9641,7 @@
 		(dnp no)
 		(uuid "9c6b9f28-7246-4784-9e74-3c26940ecdb8")
 		(property "Reference" "D3"
-			(at 150.2918 31.5214 90)
+			(at 150.2918 42.1894 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9668,7 +9650,7 @@
 			)
 		)
 		(property "Value" "Status"
-			(at 150.2918 33.8328 90)
+			(at 150.2918 44.5008 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9677,7 +9659,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 147.32 32.512 0)
+			(at 147.32 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9686,7 +9668,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.mx/datasheet/2/445/150080VS75000-1714385.pdf"
-			(at 147.32 32.512 0)
+			(at 147.32 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9695,7 +9677,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 32.512 0)
+			(at 147.32 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9704,7 +9686,7 @@
 			)
 		)
 		(property "manf#" "150080GS75000"
-			(at 211.582 292.735 0)
+			(at 211.582 303.403 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9713,7 +9695,7 @@
 			)
 		)
 		(property "Proveedor" "LCSC"
-			(at 147.32 32.512 0)
+			(at 147.32 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9722,7 +9704,7 @@
 			)
 		)
 		(property "LCSC#" "C205442"
-			(at 147.32 32.512 0)
+			(at 147.32 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9737,9 +9719,111 @@
 			(uuid "81323646-24c3-4215-8d13-429aa25e16c8")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Female")
+		(at 173.101 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f911567-e5ab-4ced-9c71-0afe9a37dc4c")
+		(property "Reference" "J2"
+			(at 173.8122 127.6096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SWD"
+			(at 173.8122 129.921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 173.101 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.101 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.101 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manf#" "HB-PH3-25414PB2GOP "
+			(at -100.965 158.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC#" " C6332197"
+			(at 173.101 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Proveedor" "LCSC"
+			(at 173.101 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be668a09-af08-4a79-b909-fb82612c7c88")
+		)
+		(pin "2"
+			(uuid "2c6af16b-e824-4858-bcc9-7296914b585d")
+		)
+		(pin "3"
+			(uuid "6f6bdae0-0dc9-4b92-9425-648e0fb40ce9")
+		)
+		(pin "4"
+			(uuid "b49a4bfd-25d4-4c2c-97ad-a00b8273f6c7")
+		)
+		(instances
+			(project "Magspoof_V5"
+				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -9834,7 +9918,7 @@
 			(uuid "362dce22-f82a-42bb-8aea-4df1fd006ffe")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C3")
 					(unit 1)
@@ -9930,7 +10014,7 @@
 			(uuid "61eddac6-971b-4c4d-a235-13bf9b931fc3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "R11")
 					(unit 1)
@@ -9995,7 +10079,7 @@
 			(uuid "4c3d3c04-36ef-4c86-bf09-7eeb73835ad0")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR058")
 					(unit 1)
@@ -10029,7 +10113,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 116.332 107.442 0)
 			(effects
 				(font
@@ -10056,6 +10140,33 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC#" "C492401"
+			(at 116.332 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manf#" "PZ254V-11-02P "
+			(at 116.332 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Proveedor" "LCSC"
+			(at 116.332 107.442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9776ccd1-04fe-4460-8715-0a7a3ade1602")
 		)
@@ -10063,7 +10174,7 @@
 			(uuid "eb04e5ff-1e51-4e9e-adae-5a15e79e47a3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "JP1")
 					(unit 1)
@@ -10159,7 +10270,7 @@
 			(uuid "b572c7c0-6a53-4797-8a88-a6de634e320d")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C18")
 					(unit 1)
@@ -10175,7 +10286,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b0a747d7-56b9-4812-893e-6d01809214f3")
 		(property "Reference" "BT1"
 			(at 181.61 39.5478 0)
@@ -10238,7 +10349,7 @@
 			(uuid "dcb478a5-db01-49d5-af43-2482424e2b6e")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "BT1")
 					(unit 1)
@@ -10248,7 +10359,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.801 110.236 0)
+		(at 49.53 110.236 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10256,7 +10367,7 @@
 		(dnp no)
 		(uuid "b5abac0f-62f4-42aa-b048-7747c1460db2")
 		(property "Reference" "#PWR0104"
-			(at 58.801 116.586 0)
+			(at 49.53 116.586 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10265,7 +10376,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.928 114.6302 0)
+			(at 49.657 114.6302 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10273,7 +10384,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.801 110.236 0)
+			(at 49.53 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10282,7 +10393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.801 110.236 0)
+			(at 49.53 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10291,7 +10402,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.801 110.236 0)
+			(at 49.53 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10303,7 +10414,7 @@
 			(uuid "0b5c6a78-3832-4779-966b-aad25ae63e75")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR0104")
 					(unit 1)
@@ -10322,7 +10433,7 @@
 		(dnp no)
 		(uuid "ba08d33b-4dc1-497e-9a02-90cf149e9f05")
 		(property "Reference" "SW4"
-			(at 227.203 76.0984 90)
+			(at 243.078 75.946 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10331,7 +10442,7 @@
 			)
 		)
 		(property "Value" "SOURCE MAG"
-			(at 227.203 73.5584 90)
+			(at 244.094 71.882 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10412,7 +10523,7 @@
 			(uuid "222edb2c-c7f5-4be3-baae-da33ba4f8944")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW4")
 					(unit 1)
@@ -10477,7 +10588,7 @@
 			(uuid "aefe3f0b-8144-410b-bb0a-9da62e35b4a9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR041")
 					(unit 1)
@@ -10542,7 +10653,7 @@
 			(uuid "4b644cbf-dd02-48c8-92c7-88138b342ea8")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR013")
 					(unit 1)
@@ -10552,7 +10663,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 58.801 100.33 0)
+		(at 49.53 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10560,7 +10671,7 @@
 		(dnp no)
 		(uuid "cde35a8d-51fb-43c3-a8e8-ea24236cdf3b")
 		(property "Reference" "C2"
-			(at 54.61 100.076 0)
+			(at 45.339 100.076 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10569,7 +10680,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 53.086 101.854 0)
+			(at 43.815 101.854 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10578,7 +10689,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 58.801 100.33 0)
+			(at 49.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10587,7 +10698,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf"
-			(at 58.801 100.33 0)
+			(at 49.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10596,7 +10707,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.801 100.33 0)
+			(at 49.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10605,7 +10716,7 @@
 			)
 		)
 		(property "manf#" "GRM022R61A104ME01L"
-			(at 58.801 100.33 0)
+			(at 49.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10614,7 +10725,7 @@
 			)
 		)
 		(property "LCSC#" "C2171572"
-			(at 58.801 100.33 0)
+			(at 49.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10623,7 +10734,7 @@
 			)
 		)
 		(property "Proveedor" "LCSC"
-			(at 58.801 100.33 0)
+			(at 49.53 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10638,7 +10749,7 @@
 			(uuid "02e6c3b2-d23b-4782-aa62-2166532f1eae")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "C2")
 					(unit 1)
@@ -10703,7 +10814,7 @@
 			(uuid "0e4a9f7b-7aef-48f3-a968-6e1b73f20b13")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR02")
 					(unit 1)
@@ -10768,7 +10879,7 @@
 			(uuid "2660efc0-f0fd-4e32-882e-89d912ba3b1c")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR052")
 					(unit 1)
@@ -10783,7 +10894,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d67cf486-1c4f-4428-8b94-45410e79f2e0")
 		(property "Reference" "H4"
@@ -10804,7 +10915,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 190.119 133.35 0)
 			(effects
 				(font
@@ -10832,7 +10943,7 @@
 			)
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "H4")
 					(unit 1)
@@ -10847,9 +10958,9 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e151add3-871c-47e3-9928-60983bcc8283")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 280.924 81.28 0)
 			(effects
 				(font
@@ -10894,7 +11005,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "-"
+		(property "manf#" ""
 			(at 6.1468 112.1664 0)
 			(effects
 				(font
@@ -10916,9 +11027,9 @@
 			(uuid "12caf851-ee3c-4974-bf44-9a3036c212df")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -10981,7 +11092,7 @@
 			(uuid "98801d47-3635-4282-b1af-28516f463987")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR010")
 					(unit 1)
@@ -11075,7 +11186,7 @@
 			(uuid "6cfb7b33-5d44-4802-8833-94f092cc1d78")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "D1")
 					(unit 1)
@@ -11140,7 +11251,7 @@
 			(uuid "b165babe-74a2-4ed8-858c-2d16f36e21e3")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR014")
 					(unit 1)
@@ -11205,7 +11316,7 @@
 			(uuid "14708bcd-c41f-4ebb-91a5-ccac4c907927")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR044")
 					(unit 1)
@@ -11270,7 +11381,7 @@
 			(uuid "cc961de0-f27b-42ab-97e4-4d8572d42ea9")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR065")
 					(unit 1)
@@ -11364,7 +11475,7 @@
 			(uuid "3e6a1b98-67b9-4b1c-814f-603f70f97851")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "SW5")
 					(unit 1)
@@ -11424,7 +11535,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "JFC0603-0500FS"
+		(property "manf#" "0603FA-R500 "
 			(at 45.339 30.48 0)
 			(effects
 				(font
@@ -11442,7 +11553,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC#" "C136327"
+		(property "LCSC#" "C2838887"
 			(at 45.339 30.48 0)
 			(effects
 				(font
@@ -11458,7 +11569,7 @@
 			(uuid "99573800-bd04-4f62-befd-c81b1c10e446")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "F1")
 					(unit 1)
@@ -11523,7 +11634,7 @@
 			(uuid "909b0c15-d773-45fb-b7bd-517a74006804")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR048")
 					(unit 1)
@@ -11588,7 +11699,7 @@
 			(uuid "d458610a-7455-4349-af21-bee42fe65993")
 		)
 		(instances
-			(project "Magspoof_V4"
+			(project "Magspoof_V5"
 				(path "/a54f9b8d-da56-4b4b-9f0d-04fac56db24a"
 					(reference "#PWR060")
 					(unit 1)
