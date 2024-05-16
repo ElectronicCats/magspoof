@@ -257,7 +257,7 @@ void play(int option){
 void setup() {
   Serial0_begin(9600);
 
-  delay(5000);
+  delay(2000);
   
   pinMode(LED, OUTPUT);
   digitalWrite(LED, LOW);
@@ -299,6 +299,8 @@ void setup() {
   USBSerial_println();
   USBSerial_flush();
   USBSerial_println("MAGSPOOF");
+  USBSerial_println();
+  USBSerial_println("h: Help");
   USBSerial_println();
 }
 
@@ -449,11 +451,24 @@ void loop() {
 
   // Print tracks stored in RAM
   if (recvStr[0] == 'd') {   
-  USBSerial_println();     
-  USBSerial_println("RAM TRACK 1:");
-  s_print(tracks[0]);
-  USBSerial_println("RAM TRACK 2:");
-  s_print(tracks[1]);
-  USBSerial_println();
+    USBSerial_println();
+    USBSerial_println("RAM TRACK 1:");
+    s_print(tracks[0]);
+    USBSerial_println("RAM TRACK 2:");
+    s_print(tracks[1]);
+    USBSerial_println();
+  }
+
+  // Print help menu
+  if (recvStr[0] == 'h') {
+    USBSerial_println();
+    USBSerial_println("Available commands:");
+    USBSerial_println("h: Help (display this menu)");
+    USBSerial_println("s: Save tracks from RAM to EEPROM");
+    USBSerial_println("p1: Play track 1");
+    USBSerial_println("p2: Play track 2");
+    USBSerial_println("p: Play tracks alternating between 1 and 2");
+    USBSerial_println("d: Display the contents of tracks in RAM");
+    USBSerial_println();
   }
 }
