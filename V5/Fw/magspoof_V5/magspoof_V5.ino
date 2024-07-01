@@ -104,9 +104,6 @@ void playTrack(int track) {
   track--; // index 0
   dir = 0;
 
-  // enable H-bridge and LED
-  //digitalWrite(ENABLE_PIN, HIGH);
-
   // First put out a bunch of leading zeros.
   for (int i = 0; i < 25; i++)
     playBit(0);
@@ -232,23 +229,18 @@ void play(int option){
     // Play track 1
     playTrack(1);
     digitalWrite(LED, LOW);
-    //s_print(tracks[0]);
     USBSerial_println("MagSpoof activated");
     break;
   case 2:
     // Play track 2
     playTrack(2);
     digitalWrite(LED, LOW);
-    //s_print(tracks[1]);
     USBSerial_println("MagSpoof activated");
     break;
   case 0:
     // Play alternating tracks on successive button presses
     playTrack(1 + (curTrack++ % 2));
     digitalWrite(LED, LOW);
-    //s_print(tracks[0]);
-    //s_print(tracks[1]);
-    //delay(100);
     USBSerial_println("MagSpoof activated");
   }
 }
@@ -310,7 +302,6 @@ void loop() {
     USBSerial_println("MagSpoof");
     digitalWrite(LED, HIGH);
     play(0);
-    //delay(500);
     digitalWrite(LED, LOW);
     s_print(tracks[0]);
     s_print(tracks[1]);
@@ -390,14 +381,11 @@ void loop() {
     if (recvStr[0] == 's') {
 
       USBSerial_println("...to EEPROM");
-      //strcpy(tracks[0], recvStr);
-
       for (uint8_t i = 0; i < MAX ; i++) {
         eeprom_write_byte(i, tracks[0][i]);
         if (tracks[0][i] == '?') {
           eeprom_write_byte(i + 1, '\0');
           tracks[0][i + 1] = '\0';
-          //USBSerial_println("? found");
           break;
         }
       }
@@ -407,7 +395,6 @@ void loop() {
         if (tracks[1][i] == '?') {
           eeprom_write_byte(i + 1, '\0');
           tracks[1][i + 1] = '\0';
-          //USBSerial_println("? found");
           break;
         }
       }
@@ -419,7 +406,6 @@ void loop() {
       for (uint8_t i = 0; i < MAX ; i++) {
         tracks[0][i] = recvStr[i];
         if (recvStr[i] == '?') {
-          //USBSerial_println("? found");
           {
             tracks[0][i + 1] = '\0';
             break;
@@ -433,7 +419,6 @@ void loop() {
       for (uint8_t i = 0; i < MAX ; i++) {
         tracks[1][i] = recvStr[i];
         if (recvStr[i] == '?') {
-          //USBSerial_println("? found");
           {
             tracks[1][i + 1] = '\0';
             break;
