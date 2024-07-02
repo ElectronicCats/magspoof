@@ -69,6 +69,35 @@ void blink(uint8_t pin, int msdelay, int times) {
   }
 }
 
+void showEEPROM() {
+  
+USBSerial_println("EEPROM track 1:");
+
+  for (uint8_t i = 0; i < MAX; i++) {
+    char eepromData = eeprom_read_byte(i);
+    tracks[0][i] = eepromData;
+    USBSerial_print(tracks[0][i]);
+    if (tracks[0][i] == '?') {
+      tracks[0][i + 1] = '\0';
+      break;
+    }
+  }
+
+  //load track2 from eeprom
+  USBSerial_println();
+  USBSerial_println("EEPROM track 2:");
+  
+  for (uint8_t i = MAX; i < 2 * MAX; i++) {
+    char eepromData = eeprom_read_byte(i);
+    tracks[1][i - MAX] = eepromData;
+    USBSerial_print(tracks[1][i - MAX]);
+    if (tracks[1][i - MAX] == '?') {
+      tracks[1][i + 1 - MAX] = '\0';
+      break;
+    }
+  }
+}
+
 // send a single bit out
 void playBit(int sendBit) {
   dir ^= 1;
@@ -250,31 +279,7 @@ void setup() {
 
   //load track1 from eeprom
 
-  USBSerial_println("EEPROM track 1:");
-
-  for (uint8_t i = 0; i < MAX; i++) {
-    char eepromData = eeprom_read_byte(i);
-    tracks[0][i] = eepromData;
-    USBSerial_print(tracks[0][i]);
-    if (tracks[0][i] == '?') {
-      tracks[0][i + 1] = '\0';
-      break;
-    }
-  }
-
-  //load track2 from eeprom
-  USBSerial_println();
-  USBSerial_println("EEPROM track 2:");
-  
-  for (uint8_t i = MAX; i < 2 * MAX; i++) {
-    char eepromData = eeprom_read_byte(i);
-    tracks[1][i - MAX] = eepromData;
-    USBSerial_print(tracks[1][i - MAX]);
-    if (tracks[1][i - MAX] == '?') {
-      tracks[1][i + 1 - MAX] = '\0';
-      break;
-    }
-  }
+  showEEPROM();
 
   storeRevTrack(TRACKS);
 
@@ -428,6 +433,12 @@ void loop() {
     USBSerial_println();  
   }
 
+    // Print tracks stored in RAM
+  if (recvStr[0] == 'e') {
+    showEEPROM();
+    USBSerial_println();  
+  }
+
   // Print help menu
   if (recvStr[0] == 'h') {
     USBSerial_println();
@@ -438,6 +449,7 @@ void loop() {
     USBSerial_println("p2: Play track 2");
     USBSerial_println("p: Play tracks alternating between 1 and 2");
     USBSerial_println("d: Display the contents of tracks in RAM");
+    USBSerial_println("e: Display the contents of tracks in EEPROM");
     USBSerial_println();
   }
 
