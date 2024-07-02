@@ -210,16 +210,6 @@ void s_print(char *s) {
   USBSerial_println();
 }
 
-void dumpEEPROM() {
-  USBSerial_println("DataFlash Dump:");
-  for (uint8_t i = 0; i < 2 * MAX; i++) {
-    char eepromData = eeprom_read_byte(i);
-    USBSerial_print(eepromData);
-  }
-  USBSerial_println();
-  USBSerial_flush();
-}
-
 // Alternative function to control the operation based on input option
 void play(int option){
   digitalWrite(LED, HIGH);
@@ -349,30 +339,6 @@ void loop() {
       }
     }
   }
-
-  // Play tracks in RAM
-  if (recvStr[0] == 'p') {
-    if(recvStr[1] == '1') {
-    USBSerial_println();  
-    USBSerial_print("PLAY TRACK 1");
-    USBSerial_println();
-    play(1);  
-    }
-    else if(recvStr[1] == '2') {
-    USBSerial_println();  
-    USBSerial_print("PLAY TRACK 2");
-    USBSerial_println();
-    play(2);   
-    }
-    else {
-    USBSerial_println();  
-    USBSerial_print("PLAY");
-    USBSerial_println();
-    play(0);
-    }
-    
-    USBSerial_flush();
-  }
   
   // Process complete strings from USB serial
   if (stringComplete || serialComplete) {
@@ -398,8 +364,10 @@ void loop() {
           break;
         }
       }
+      
       serialComplete = false;
-      //dumpEEPROM();
+      stringComplete = false;
+      USBSerial_flush();  
     }
 
     if (recvStr[0] == '%') {
@@ -427,12 +395,28 @@ void loop() {
       }
       storeRevTrack(TRACKS);
     }
-    
-    stringComplete = false;
-    recvStrPtr = 0;
 
-    USBSerial_flush();
-  }
+    // Play tracks in RAM
+    if (recvStr[0] == 'p') {
+      if(recvStr[1] == '1') {
+      USBSerial_println();  
+      USBSerial_print("PLAY TRACK 1");
+      USBSerial_println();
+      play(1);  
+      }
+      else if(recvStr[1] == '2') {
+      USBSerial_println();  
+      USBSerial_print("PLAY TRACK 2");
+      USBSerial_println();
+      play(2);   
+      }
+      else {
+      USBSerial_println();  
+      USBSerial_print("PLAY");
+      USBSerial_println();
+      play(0);
+      }  
+    }
 
   // Print tracks stored in RAM
   if (recvStr[0] == 'd') {   
@@ -441,7 +425,7 @@ void loop() {
     s_print(tracks[0]);
     USBSerial_println("RAM TRACK 2:");
     s_print(tracks[1]);
-    USBSerial_println();
+    USBSerial_println();  
   }
 
   // Print help menu
@@ -456,4 +440,11 @@ void loop() {
     USBSerial_println("d: Display the contents of tracks in RAM");
     USBSerial_println();
   }
+
+  recvStrPtr = 0;
+  serialComplete = false;
+  stringComplete = false;
+  USBSerial_flush();  
+  
+ }
 }
