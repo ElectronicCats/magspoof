@@ -277,10 +277,6 @@ void setup() {
   pinModeFast(PINS_PORT, PIN_B_BIT, OUTPUT);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
 
-  //load track1 from eeprom
-
-  showEEPROM();
-
   storeRevTrack(TRACKS);
 
   USBSerial_println();
@@ -434,6 +430,11 @@ void loop() {
   }
 
     // Print tracks stored in RAM
+  if (recvStr[0] == 'l') {   
+    showEEPROM(); 
+  }
+
+    // Print tracks stored in RAM
   if (recvStr[0] == 'e') {
     showEEPROM();
     USBSerial_println();  
@@ -448,6 +449,7 @@ void loop() {
     USBSerial_println("p1: Play track 1");
     USBSerial_println("p2: Play track 2");
     USBSerial_println("p: Play tracks alternating between 1 and 2");
+    USBSerial_println("l: Load the contents of tracks in EEPROM");
     USBSerial_println("d: Display the contents of tracks in RAM");
     USBSerial_println("e: Display the contents of tracks in EEPROM");
     USBSerial_println();
