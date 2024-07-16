@@ -3,7 +3,7 @@
   Modified version by Eduardo Contreras
   for Electronic Cats
 
-  Original code by Samy Kamk  r (http://samy.pl/magspoof/)
+  Original code by Samy Kamkar (http://samy.pl/magspoof/)
 
   This example demonstrates how to use Magspoof v3 by Electronic Cats
   https://github.com/ElectronicCats/magspoof
