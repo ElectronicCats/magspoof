@@ -1,11 +1,11 @@
 # MagSpoof By Electronic Cats
 
 <p align="center">
-  <img src="https://github.com/AndreaZGuz/magspoof/assets/122187221/110310b2-5dc3-4f70-af95-51d3af226e4e" />
+  <img src="https://github.com/user-attachments/assets/01520f84-0be6-42ff-91f2-5de76d459c16" />
 </p>
 
 <p align=center>
-<a href="https://electroniccats.com/store/magspoof-v4/">
+<a href="https://electroniccats.com/store/magspoof-v5/">
   <img src="https://github.com/ElectronicCats/magspoof/assets/122187221/9633b08e-2120-45c7-b7fe-362b901a30ba" width="200" height="104" />
 </a>
 <a href="https://github.com/ElectronicCats/magspoof/wiki">
