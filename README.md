@@ -1,8 +1,9 @@
 # MagSpoof By Electronic Cats
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/01520f84-0be6-42ff-91f2-5de76d459c16" />
-</p>
+  
+<a href="https://github.com/ElectronicCats/magspoof/wiki">
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/01520f84-0be6-42ff-91f2-5de76d459c16" height="550" />
+  </p>
 
 <p align=center>
 <a href="https://electroniccats.com/store/magspoof-v5/">
