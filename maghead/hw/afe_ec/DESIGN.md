@@ -1,7 +1,6 @@
 # maghead-afe: design spec
 
-Estado: **BORRADOR, sin bloquear.** Según el flujo `hardware-design-flow`, no se dibuja nada hasta que el
-diseñador diga "locked". Cada dato de hardware está comprobado o marcado UNVERIFIED.
+Estado: **LOCKED por el diseñador el 2026-11-15** con las propuestas del borrador (ver Decisions). Cada dato de hardware está comprobado o marcado UNVERIFIED.
 
 Sustituye a `../afe/` (rev A hecha fuera del flujo de la casa; ver "Por qué se rehace").
 
@@ -65,6 +64,14 @@ colocación y se exportaron Gerbers sin puerta de liberación.
 8. Tamaño máximo y si hay algún borde obligado para los conectores.
 
 ## Decisions (dated)
+- 2026-11-15 (locked): 5 placas, ensamblaje JLC Economic en una cara.
+- 2026-11-15 (locked): 2 capas JLC2L-1.6, GND en ambas caras.
+- 2026-11-15 (locked): entrada de cabezal por JST-SH de 2 pines SMD, mas pads de prueba.
+- 2026-11-15 (locked): seleccion de ganancia con DIP switch SMD (1 posicion etapa 1 + 3 posiciones etapa 2, por canal).
+- 2026-11-15 (locked): trimmer de histeresis SMD.
+- 2026-11-15 (locked): sin jack de 3.5 mm; las salidas de monitor quedan como puntos de prueba SMD (MON_A, MON_B, GND).
+- 2026-11-15 (locked): Pico por cable a J4 (cabecera 1x8 de 2.54 mm, unica pieza THT, se suelda a mano).
+- 2026-11-15 (locked): placa <= 60 x 40 mm, entradas a la izquierda, J4 a la derecha.
 - 2026-11-15: la rev A de `../afe/` queda obsoleta; no fabricar.
 - 2026-11-15: el esquema eléctrico de la rev A (netlist verificada, ERC 0/0) se conserva como punto de partida;
   cambian encapsulados, conectores y campos `LCSC#` / `manf#`.
