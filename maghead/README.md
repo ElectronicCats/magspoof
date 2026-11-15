@@ -45,7 +45,7 @@ Números clave (estimaciones, ver `docs/01`): señal del cupón H ≈ 45–250 �
 - KiCad 9.0.9: DRC de las cuatro tarjetas con 0 errores y 0 conexiones pendientes; ERC del AFE con 0 errores y 0 advertencias.
 - Comprobación geométrica propia de separación entre espiras (el DRC no la cubre al ser una sola red): mínimo 0.127 mm, 0 violaciones.
 - Netlist del AFE contra tabla independiente: coincide.
-- Software: 172 pruebas en Python y 125 comprobaciones en C superadas con señales sintéticas; el firmware del Pico no se ha compilado para la placa.
+- Software: 172 pruebas en Python y 125 comprobaciones en C superadas con señales sintéticas; el firmware compila para Pico 2 y Pico con el SDK real, sin probar en placa.
 - Solver de campo contra la solución analítica de Karlqvist: 1.5 % en el pico.
 
 ## Qué falta para fabricar

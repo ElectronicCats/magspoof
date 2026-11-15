@@ -6,7 +6,7 @@ for f in sys.argv[1:]:
     ds.m_TrackMinWidth = pcbnew.FromMM(0.10 if "_A" in f else 0.127)
     ds.m_MinClearance = pcbnew.FromMM(0.10 if "_A" in f else 0.127)
     ds.m_ViasMinSize = pcbnew.FromMM(0.6); ds.m_MinThroughDrill = pcbnew.FromMM(0.3)
-    ds.m_CopperEdgeClearance = pcbnew.FromMM(0.25)
+    ds.m_CopperEdgeClearance = pcbnew.FromMM(0.3)
     ds.m_HoleClearance = pcbnew.FromMM(0.2); ds.m_HoleToHoleMin = pcbnew.FromMM(0.25)
     nc = b.GetAllNetClasses()
     pcbnew.SaveBoard(f, b)

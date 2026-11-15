@@ -26,7 +26,7 @@
 | Cupón A | Igual | Aperturas de máscara presentes; vías cubiertas | Ídem |
 | Base y separador | Igual | 0 errores, 0 sin conectar | Huella y patillaje del ITR8307 inverso; rigidez |
 | Esquemático AFE | ERC 0/0; netlist verificada | Conexiones según especificación | Sin PCB; MPN de pasivos; estabilidad; hardware |
-| Firmware y scripts | Ver `fw/README.md` y `tools/README.md` | Lo que indiquen sus pruebas en PC | Compilación para el Pico, temporización real del ADC, caudal USB |
+| Firmware y scripts | Compila para Pico 2 y Pico sin advertencias; 172 pruebas Python y 125 en C superadas | Decodificación con señales sintéticas; C idéntico a Python | Ejecución en placa, temporización real del ADC, caudal USB |
 
 ## 3. Advertencias de DRC aceptadas
 
@@ -36,7 +36,7 @@
 | `track_dangling` (4) | cupón H, F.Cu | Marcas flotantes de la línea del entrehierro, intencionadas |
 | `silk_over_copper`, `silk_edge_clearance` | cupones y base | Serigrafía recortada por pads o taladros; cosmético |
 
-El DRC se corrió con las reglas por defecto del proyecto de KiCad; las separaciones entre espiras (misma red) se validan aparte en `gen_pcbs.py`. Antes de ordenar hay que cargar las reglas del fabricante.
+El DRC se corrió con estas reglas (guardadas en cada `.kicad_pro`): separación mínima 0.127 mm (0.10 en el cupón A), pista mínima igual, vía 0.6/0.3 mm, cobre a borde y a ranura ≥ 0.3 mm, taladro a cobre ≥ 0.2 mm, taladro a taladro ≥ 0.25 mm. Las separaciones entre espiras (misma red) se validan aparte en `gen_pcbs.py`. Son valores típicos de fabricantes de prototipos; contrastarlos con el fabricante elegido.
 
 ## 4. Lista de comprobación antes de ordenar (los Gerbers actuales son candidatos rev A, no liberados)
 

@@ -1,13 +1,11 @@
 # maghead_capture - firmware de adquisicion (Pico 2 / RP2350; compatible con Pico / RP2040)
 #
 #   export PICO_SDK_PATH=/ruta/a/pico-sdk          (SDK >= 2.0 para RP2350)
-#   cp $PICO_SDK_PATH/external/pico_sdk_import.cmake .
 #   cmake -B build -DPICO_BOARD=pico2 && cmake --build build      (Pico 2)
 #   cmake -B build -DPICO_BOARD=pico  && cmake --build build      (Pico / RP2040)
 #
-# NOTA: pico_sdk_import.cmake NO esta en este repositorio (viene con el SDK); hay que
-# copiarlo aqui como se indica arriba. No se ha podido compilar para el objetivo en el
-# entorno donde se escribio (sin acceso al SDK): ver ../README.md.
+# pico_sdk_import.cmake (copiado del SDK, BSD-3) esta incluido. Compila para pico2 y pico;
+# no probado en hardware: ver ../README.md.
 cmake_minimum_required(VERSION 3.13)
 
 if(NOT DEFINED PICO_BOARD)

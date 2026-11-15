@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/drc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-11-15T00:34:21+0000",
+    "date": "2026-11-15T01:16:32+0000",
     "included_severities": [
         "error",
         "warning",
@@ -18,25 +18,10 @@
                 {
                     "description": "Footprint M3",
                     "pos": {
-                        "x": 150.0,
-                        "y": 93.0
-                    },
-                    "uuid": "6d6987e1-4a44-44c9-ac50-cc7d7bfb6677"
-                }
-            ],
-            "severity": "warning",
-            "type": "lib_footprint_issues"
-        },
-        {
-            "description": "The current configuration does not include the footprint library 'maghead'.",
-            "items": [
-                {
-                    "description": "Footprint M3",
-                    "pos": {
                         "x": 119.0,
                         "y": 93.0
                     },
-                    "uuid": "b9017c10-d6fb-4d26-895c-a3481e4f49b6"
+                    "uuid": "10d521a9-ed9d-4481-a95e-880dbe9bdfc7"
                 }
             ],
             "severity": "warning",
@@ -51,52 +36,7 @@
                         "x": 81.0,
                         "y": 93.0
                     },
-                    "uuid": "c6628007-3aad-4531-a66c-728e6e352f98"
-                }
-            ],
-            "severity": "warning",
-            "type": "lib_footprint_issues"
-        },
-        {
-            "description": "The current configuration does not include the footprint library 'maghead'.",
-            "items": [
-                {
-                    "description": "Footprint M3",
-                    "pos": {
-                        "x": 50.0,
-                        "y": 93.0
-                    },
-                    "uuid": "c9e08296-f9ba-4aff-8795-820a0c42c095"
-                }
-            ],
-            "severity": "warning",
-            "type": "lib_footprint_issues"
-        },
-        {
-            "description": "The current configuration does not include the footprint library 'maghead'.",
-            "items": [
-                {
-                    "description": "Footprint DW",
-                    "pos": {
-                        "x": 74.0,
-                        "y": 97.0
-                    },
-                    "uuid": "d401fe55-9fef-411a-a25f-9c7c9107f27c"
-                }
-            ],
-            "severity": "warning",
-            "type": "lib_footprint_issues"
-        },
-        {
-            "description": "The current configuration does not include the footprint library 'maghead'.",
-            "items": [
-                {
-                    "description": "Footprint M3",
-                    "pos": {
-                        "x": 100.0,
-                        "y": 93.0
-                    },
-                    "uuid": "eee89652-4e44-4bee-a0d8-a101fb55b80f"
+                    "uuid": "327607ef-2bef-4eca-825d-0d5ec2cef563"
                 }
             ],
             "severity": "warning",
@@ -111,7 +51,67 @@
                         "x": 126.0,
                         "y": 97.0
                     },
-                    "uuid": "f9189a8e-1280-4d5d-90c2-962140f7bbd2"
+                    "uuid": "41f79732-6754-458c-a2f6-4d1659fd4b1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint M3",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 93.0
+                    },
+                    "uuid": "4af90ff8-f0f7-413c-a1bd-3847b7200502"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint DW",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 97.0
+                    },
+                    "uuid": "56d0e20d-ba32-47a4-88ea-e3ba04531d5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint M3",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 93.0
+                    },
+                    "uuid": "5b3f88b4-3ef0-4dbf-9526-d8852cdc6397"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint M3",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 93.0
+                    },
+                    "uuid": "a1cd06f3-4f88-4e6c-a1d3-7e29b794ac25"
                 }
             ],
             "severity": "warning",

@@ -21,7 +21,7 @@ fw/
 | Parte | Estado |
 |---|---|
 | `common/f2f_decode.c`, `common/mh_proto.c` | Compilados con gcc en host (`-Wall -Wextra -Wconversion -Werror`), pruebas unitarias propias (`make test`: 125 comprobaciones), tambien bajo ASan/UBSan (`make asan`), y comparados bit a bit con la referencia Python sobre vectores sinteticos (`tools/tests/test_c_decoder.py`). |
-| `maghead_capture/main.c`, `dig_sample.pio` | **NO compilados para el objetivo y NO probados en hardware.** En el entorno donde se escribieron no habia Pico SDK ni `arm-none-eabi-gcc` (sin acceso a GitHub para descargarlos). Lo unico hecho es `make -C common syntax`: una comprobacion de sintaxis y tipos de `main.c` contra prototipos del SDK escritos a mano en `host_stub/` (de memoria). Eso **no** demuestra que compile contra el SDK real, ni mucho menos que funcione. |
+| `maghead_capture/main.c`, `dig_sample.pio` | **Compilados sin errores ni advertencias** contra pico-sdk (commit 079c6f3, TinyUSB 86ad6e5) con arm-none-eabi-gcc 13.2, para `pico2` (RP2350: 50.6 kB de codigo, 419 kB de RAM estatica) y `pico` (RP2040: 54.6 kB, 215 kB de 264 kB). Binarios en `prebuilt/`. **NO probados en hardware**: temporizacion ADC/PIO, caudal USB y comportamiento real sin verificar. |
 | Caudal USB, temporizacion del ADC, alineacion PIO/ADC, perdida de bloques, carga de CPU de la fase 2 | **No medidos.** Ver "Limites esperados". |
 
 La primera sesion con hardware debe empezar por: compilar, comprobar `VER`/`STATUS`, capturar un
@@ -33,7 +33,7 @@ saltos de `seq` y alineacion de los bits digitales con el analogico.
 ```
 export PICO_SDK_PATH=/ruta/a/pico-sdk            # SDK >= 2.0 para RP2350
 cd fw/maghead_capture
-cp $PICO_SDK_PATH/external/pico_sdk_import.cmake .   # NO esta en el repositorio
+# pico_sdk_import.cmake ya esta incluido en maghead_capture/
 cmake -B build -DPICO_BOARD=pico2 && cmake --build build     # Pico 2 (RP2350)
 cmake -B build -DPICO_BOARD=pico  && cmake --build build     # Pico (RP2040)
 ```
