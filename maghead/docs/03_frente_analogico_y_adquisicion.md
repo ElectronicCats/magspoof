@@ -2,7 +2,9 @@
 
 Archivos: `hw/afe/maghead_afe.kicad_sch` (KiCad 9), `maghead_afe.pdf`, `maghead_afe.net`, `maghead_afe_bom.csv`, `afe_analysis.md`, `ERC_NOTES.md`. Regenerar y verificar: `sh hw/afe/build.sh`.
 
-**Estado: esquemático de prototipo, ERC 0 errores / 0 advertencias, netlist comprobada contra una tabla independiente (96 componentes, 44 redes, 224 pines). No hay PCB del AFE todavía y nada se ha medido en hardware.**
+**Estado: esquemático con ERC 0 errores / 0 advertencias y netlist comprobada contra una tabla independiente (96 componentes, 44 redes). PCB rev A ruteada al 100 %: DRC con paridad de esquemático 0 errores, 0 conexiones pendientes, 7 advertencias cosméticas de la huella del jack; los 226 pads coinciden con la netlist (`check_pcb.py`). Nada se ha medido en hardware.**
+
+PCB (`maghead_afe.kicad_pcb`, detalles y compromisos en `PCB_NOTES.md`): 90 × 60 mm, 4 capas 1.6 mm (señal / plano GND / plano +3V3A / señal + GND), pista 0.25 mm, separación 0.20 mm, vías 0.6/0.3. Canal A arriba y B abajo en espejo; entradas a la izquierda, comparador a 43 mm de los nodos de la etapa 1, nodos de entrada sin vías (HEAD_P 16–17 mm, IN_P 6.6 mm, realimentación 8.9 mm). Ruteada con un enrutador propio por script, sin revisión humana. Compromisos conocidos: VREF es un árbol único compartido por etapa 1, etapa 2 y comparador (sin RC de aislamiento hacia el comparador); no hay anillo de guarda en la etapa 1; los condensadores de 1 µF quedan a ~4 mm de sus pines.
 
 ## 1. Arquitectura (2 canales idénticos, alimentación única)
 
@@ -30,13 +32,13 @@ cabezal ──┬─ BAV99 antiparalelo a VREF ── 47 Ω ──(+) U1 ½AD865
 | Alimentación y referencias | VBUS 5 V → AP2112K-3.3 (el mismo LDO del V5) → +3V3A solo analógica; comparador tras 10 Ω + 1 µF; LM4040-3.0 opcional como referencia del ADC del Pico | El 3V3 del Pico viene de un conmutado; no se usa para la analógica |
 | Masas | Una sola red GND; retorno único hacia el MCU por J4 | En la PCB: plano continuo, etapa 1 lejos del comparador y del jack, entrada del cabezal con par trenzado corto |
 
-## 2. Pendiente antes de hacer la PCB del AFE
+## 2. Pendiente antes de ordenar la PCB del AFE
 
 1. Confirmar existencias y precio de AD8656ARZ, MCP6562-E/SN, MCP6002-I/SN, AP2112K-3.3 y pasivos el día de la compra (ver `BOM.md`).
 2. Revisar pin a pin las huellas contra las hojas de datos (solo se comprobó que las huellas de biblioteca existen y que los números de pad coinciden con el símbolo).
 3. Simular estabilidad de la etapa 2 con 18 pF de realimentación y la capacidad parásita del nodo sumador con los puentes.
 4. Añadir, si se quiere medir el cupón A con margen, una opción de preamplificador de ~1 nV/√Hz.
-5. Decidir si el Pico va en zócalo sobre la misma placa.
+5. El Pico se conecta por cable a J4 (8 pines); un zócalo en la misma placa queda para la rev B.
 
 ## 3. Placa de desarrollo y firmware
 

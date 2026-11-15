@@ -25,7 +25,7 @@
 | Cupón H | Diseño completo; DRC KiCad 9: 0 errores; comprobación propia entre espiras: 0 violaciones; Gerbers y taladros exportados | Conectividad, separaciones, ranuras en el archivo de taladros, vías cubiertas | Revisión humana; capacidades del fabricante elegido |
 | Cupón A | Igual | Aperturas de máscara presentes; vías cubiertas | Ídem |
 | Base y separador | Igual | 0 errores, 0 sin conectar | Huella y patillaje del ITR8307 inverso; rigidez |
-| Esquemático AFE | ERC 0/0; netlist verificada | Conexiones según especificación | Sin PCB; MPN de pasivos; estabilidad; hardware |
+| AFE (esquemático + PCB) | ERC 0/0; PCB con DRC y paridad 0 errores, 0 sin conectar; pads = netlist | Conexiones según especificación | Huellas contra hojas de datos; MPN de pasivos; estabilidad; efecto del trazado en ruido; hardware |
 | Firmware y scripts | Compila para Pico 2 y Pico sin advertencias; 172 pruebas Python y 125 en C superadas | Decodificación con señales sintéticas; C idéntico a Python | Ejecución en placa, temporización real del ADC, caudal USB |
 
 ## 3. Advertencias de DRC aceptadas
@@ -42,10 +42,10 @@ El DRC se corrió con estas reglas (guardadas en cada `.kicad_pro`): separación
 
 - [ ] P-01 Abrir las cuatro tarjetas en KiCad y revisarlas visualmente (capas internas del cupón H, cara F libre bajo los polos).
 - [ ] P-02 Confirmar con el fabricante: ranura no metalizada de 1.0 × 3.0 mm, canal interior de 1.2 mm en la base, 0.127/0.127 mm en 4 capas de 0.8 mm, 0.10 mm en 2 capas, vías 0.3/0.6 cubiertas, ENIG.
-- [ ] P-03 Verificar el ITR8307: variante de montaje inverso, dimensiones del recorte y patillaje (1 = cátodo, 2 = ánodo, 3 = colector, 4 = emisor según el símbolo de KiCad) contra la hoja de datos de Everlight. Si hay duda, fabricar la base sin poblar las compuertas: el resto del banco no depende de ellas.
+- [ ] P-03 (la hoja de datos de Everlight no fue accesible desde la sesión; es la única huella del conjunto sin respaldo documental) Verificar el ITR8307: variante de montaje inverso, dimensiones del recorte y patillaje (1 = cátodo, 2 = ánodo, 3 = colector, 4 = emisor según el símbolo de KiCad) contra la hoja de datos de Everlight. Si hay duda, fabricar la base sin poblar las compuertas: el resto del banco no depende de ellas.
 - [ ] P-04 Decidir el ajuste de los pasadores (taladro de 2.0 en base y separador, 2.1 en cupones) según la tolerancia del fabricante.
 - [ ] P-05 Tener el material magnético y el Kapton en mano, o al menos confirmado, antes de pedir las PCBs: sin ellos el cupón H no se puede ensamblar.
-- [ ] P-06 Diseñar la PCB del AFE (pendiente; ver `03` §2) o montar el esquemático en una placa de prototipos con plano de masa para T0.
+- [ ] P-06 Revisar la PCB del AFE (ruteo automático por script): zona de entrada de la etapa 1, árbol de VREF, huella del jack y de los trimmers contra hojas de datos.
 - [ ] P-07 Elegir el cabezal comercial de referencia y diseñar su soporte (prueba T10).
 - [ ] P-08 Definir el pad de presión (material y espesor medidos).
 - [ ] P-09 Confirmar que la tienda y la documentación oficial del MagSpoof V5 no contradicen lo leído en el repositorio (la página de la tienda no fue accesible).

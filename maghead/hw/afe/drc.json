@@ -1,0 +1,169 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-15T01:43:43+0000",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "maghead_afe.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment of J3 on Edge.Cuts",
+                    "pos": {
+                        "x": 173.8,
+                        "y": 140.0
+                    },
+                    "uuid": "e738f1f2-2b58-40da-862f-afea002db8a0"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 171.5,
+                        "y": 140.0
+                    },
+                    "uuid": "61274973-4680-4f5b-9227-0044123c0b19"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment of J3 on Edge.Cuts",
+                    "pos": {
+                        "x": 173.8,
+                        "y": 140.0
+                    },
+                    "uuid": "e738f1f2-2b58-40da-862f-afea002db8a0"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 173.0,
+                        "y": 140.0
+                    },
+                    "uuid": "1f40d6bf-4422-4d8a-b7ae-c2939cd6a6a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment of J3 on Edge.Cuts",
+                    "pos": {
+                        "x": 173.8,
+                        "y": 140.0
+                    },
+                    "uuid": "e738f1f2-2b58-40da-862f-afea002db8a0"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 173.0,
+                        "y": 141.8
+                    },
+                    "uuid": "025a6cc1-d679-4147-aaae-456286752fe4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment of J3 on Edge.Cuts",
+                    "pos": {
+                        "x": 178.2,
+                        "y": 140.0
+                    },
+                    "uuid": "8ad0167c-02c1-4718-bde6-24685e2a2980"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 179.0,
+                        "y": 140.0
+                    },
+                    "uuid": "569cce79-247a-4ee2-8b5f-cc4742e1c64e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment of J3 on Edge.Cuts",
+                    "pos": {
+                        "x": 178.2,
+                        "y": 140.0
+                    },
+                    "uuid": "8ad0167c-02c1-4718-bde6-24685e2a2980"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 180.5,
+                        "y": 138.8
+                    },
+                    "uuid": "c3420220-1855-49fc-8be5-a50f22e46bbd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment of J3 on Edge.Cuts",
+                    "pos": {
+                        "x": 178.2,
+                        "y": 140.0
+                    },
+                    "uuid": "8ad0167c-02c1-4718-bde6-24685e2a2980"
+                },
+                {
+                    "description": "Segment of J3 on F.Silkscreen",
+                    "pos": {
+                        "x": 180.5,
+                        "y": 140.0
+                    },
+                    "uuid": "9cf67171-a135-4836-9e75-243e45fc18e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Footprint 'Jack_3.5mm_CUI_SJ1-3523N_Horizontal' does not match copy in library 'Connector_Audio'.",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 176.0,
+                        "y": 135.5
+                    },
+                    "uuid": "5d52bdfd-07e3-4c70-b7a7-b25d01c302c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 (export (version "E")
   (design
     (source "/work/hw/afe/maghead_afe.kicad_sch")
-    (date "2026-11-15T00:40:03+0000")
+    (date "2026-11-15T01:43:02+0000")
     (tool "Eeschema 9.0.9")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block

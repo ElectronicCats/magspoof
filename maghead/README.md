@@ -21,7 +21,7 @@ Números clave (estimaciones, ver `docs/01`): señal del cupón H ≈ 45–250 �
 | `hw/coupon_H` | Cupón híbrido, 4 capas 0.8 mm: 2 sitios × (2 bobinas de 36 espiras en serie-oposición + 2 ranuras). Cinco variantes de ensamblaje sobre la misma PCB |
 | `hw/coupon_A` | Cupón de pistas al aire, 2 capas: 3 pistas simples + 1 meandro adaptado a pista 2 |
 | `hw/fixture` | Base con lengüetas de presión fresadas y compuertas ópticas, y separador/guía de 1.0 mm. Con el cupón forman el "sándwich" de 2.8 mm |
-| `hw/afe` | Esquemático del frente analógico de 2 canales (solo esquemático) |
+| `hw/afe` | Frente analógico de 2 canales: esquemático y PCB de 90 × 60 mm, 4 capas |
 
 ## Mapa del repositorio
 
@@ -42,7 +42,7 @@ Números clave (estimaciones, ver `docs/01`): señal del cupón H ≈ 45–250 �
 
 ## Verificaciones hechas
 
-- KiCad 9.0.9: DRC de las cuatro tarjetas con 0 errores y 0 conexiones pendientes; ERC del AFE con 0 errores y 0 advertencias.
+- KiCad 9.0.9: DRC de las cuatro tarjetas con 0 errores y 0 conexiones pendientes; ERC del AFE con 0 errores y 0 advertencias; PCB del AFE con DRC y paridad de esquemático en 0 errores.
 - Comprobación geométrica propia de separación entre espiras (el DRC no la cubre al ser una sola red): mínimo 0.127 mm, 0 violaciones.
 - Netlist del AFE contra tabla independiente: coincide.
 - Software: 172 pruebas en Python y 125 comprobaciones en C superadas con señales sintéticas; el firmware compila para Pico 2 y Pico con el SDK real, sin probar en placa.
@@ -50,7 +50,7 @@ Números clave (estimaciones, ver `docs/01`): señal del cupón H ≈ 45–250 �
 
 ## Qué falta para fabricar
 
-La lista completa está en `docs/05`, §4. Lo esencial: revisión humana de los diseños, confirmar capacidades del fabricante de PCB (ranuras de 1.0 mm, 0.127 mm en 4 capas de 0.8 mm), verificar la huella del sensor óptico, tener el material magnético confirmado, y diseñar la PCB del frente analógico.
+La lista completa está en `docs/05`, §4. Lo esencial: revisión humana de los diseños, confirmar capacidades del fabricante de PCB (ranuras de 1.0 mm, 0.127 mm en 4 capas de 0.8 mm), verificar la huella del sensor óptico contra su hoja de datos, tener el material magnético confirmado y elegir el cabezal comercial de referencia.
 
 ## Reproducir
 

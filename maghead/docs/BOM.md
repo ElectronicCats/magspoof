@@ -35,6 +35,7 @@ Alternativas de mismo encapsulado y patillaje para U1/U2 (a evaluar, no verifica
 | `maghead_A` | 2 capas, 0.8 mm, pista mínima 0.10 mm, ENIG | 5 |
 | `maghead_base` | 2 capas, 1.0 mm, recortes interiores fresados (canal de 1.2 mm), cualquier acabado | 5 |
 | `maghead_spacer` | sin cobre, 1.0 mm | 5 |
+| `maghead_afe` | 4 capas, 1.6 mm, 0.20/0.25 mm, vía 0.3/0.6, cualquier acabado | 5 |
 
 ## D. Materiales magnéticos y de entrehierro
 
