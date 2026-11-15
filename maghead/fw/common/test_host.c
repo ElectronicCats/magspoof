@@ -326,11 +326,11 @@ static int cmd_stream(const char *path, const char *outp, uint32_t fs_total, int
         size_t w_ = (bi) * BLOCK_WORDS + i_; int16_t s_ = x[w_ / 2]; \
         adc[i_] = (w_ & 1) ? 2048 : (uint16_t)s_; } \
         for (i_ = 0; i_ < BLOCK_WORDS / 8; i_++) { \
-            /* comparador A = signo de la muestra; barrera 1 activa en la 2a mitad del vector */ \
+            /* comparador A = signo de la muestra; barrera 1 activa 20 ms desde la mitad del vector */ \
             uint32_t v_ = 0; int k_; for (k_ = 0; k_ < 8; k_++) { \
                 size_t w_ = (bi) * BLOCK_WORDS + i_ * 8 + (size_t)k_; uint32_t nb_ = MH_DIG_GATE2; \
                 if (x[w_ / 2] > 2048) nb_ |= MH_DIG_COMP_A; \
-                if (w_ / 2 < n / 2) nb_ |= MH_DIG_GATE1; \
+                if (w_ / 2 < n / 2 || w_ / 2 >= n / 2 + fs_total / 100) nb_ |= MH_DIG_GATE1; \
                 v_ |= nb_ << (4 * k_); } dig[i_] = v_; } } while (0)
 #define SEND(bi, fl) do { mh_hdr_t h_; size_t l_; memset(&h_, 0, sizeof(h_)); \
         h_.flags = (uint8_t)(fl); h_.chan_mode = MH_CHAN_AB; h_.seq = (uint32_t)(bi); \

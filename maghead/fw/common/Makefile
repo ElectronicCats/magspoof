@@ -30,4 +30,11 @@ asan: $(B)/test_host_asan
 clean:
 	rm -rf $(B)
 
-.PHONY: all test asan clean
+.PHONY: all test asan clean syntax
+
+# Comprobacion de SINTAXIS de main.c del firmware contra prototipos escritos a mano
+# (../maghead_capture/host_stub). No sustituye a compilar con el Pico SDK.
+syntax:
+	$(CC) -std=c11 -fsyntax-only -Wall -Wextra -Wshadow -I../maghead_capture/host_stub -I. ../maghead_capture/main.c
+	$(CC) -std=c11 -fsyntax-only -Wall -Wextra -Wshadow -DMH_ENABLE_DECODE=0 -I../maghead_capture/host_stub -I. ../maghead_capture/main.c
+	@echo "sintaxis OK (solo contra stubs)"

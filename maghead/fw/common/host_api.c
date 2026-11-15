@@ -8,7 +8,7 @@
 
 /* Ejecuta el decodificador multi-instancia sobre un vector de muestras y devuelve,
  * ademas del resultado, el registro de transiciones y los bits de la instancia elegida.
- * decims = NULL => {1, 4, 16, 64}. Devuelve el estado, o -1 si falta memoria. */
+ * decims = NULL => 1, 2, 4 ... (F2F_MULTI_N valores). Devuelve el estado, o -1 si falta memoria. */
 int f2f_host_run(const uint16_t *x, size_t n, int fmt, const f2f_cfg_t *cfg,
                  const uint32_t *decims, f2f_result_t *res,
                  int64_t *tlog, int32_t *vlog, uint32_t *plog, uint32_t cap, uint32_t *n_tlog,
@@ -61,4 +61,5 @@ int f2f_host_run_edges(const int64_t *t, size_t n, int fmt, const f2f_cfg_t *cfg
 }
 
 size_t f2f_host_sizeof_result(void) { return sizeof(f2f_result_t); }
+int f2f_host_multi_n(void) { return F2F_MULTI_N; }
 size_t f2f_host_sizeof_cfg(void) { return sizeof(f2f_cfg_t); }

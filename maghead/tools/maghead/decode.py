@@ -11,7 +11,7 @@ Cadena causal:
   (parabola por 3 puntos) -> intervalos -> seguidor de periodo de bit con IIR
   acotado -> bits -> ISO 7811 (pista 1: 7 bits; pistas 2/3: 5 bits), ambos
   sentidos, paridad impar por caracter y LRC.
-Se ejecutan varias instancias con M = 1, 4, 16, 64 y se elige el mejor resultado.
+Se ejecutan varias instancias con M = 1, 2, 4 ... 64 y se elige el mejor resultado.
 
 `decode_noncausal()` es una variante solo-host (filtro de fase cero y periodo
 local estimado mirando a ambos lados); NO existe en el firmware.
@@ -27,7 +27,7 @@ TICKS_PER_SAMPLE = 64
 MAX_BITS = 1024
 MAX_CHARS = 112
 MAX_PERR = 16
-DEFAULT_DECIMS = (1, 4, 16, 64)
+DEFAULT_DECIMS = (1, 2, 4, 8, 16, 32, 64)
 
 OK, NO_SIGNAL, NO_START, NO_END, PARITY_ERR, LRC_ERR = range(6)
 STATUS_NAMES = ["OK", "NO_SIGNAL", "NO_START", "NO_END", "PARITY_ERR", "LRC_ERR"]
@@ -39,7 +39,7 @@ _RANK = {OK: 5, LRC_ERR: 4, PARITY_ERR: 3, NO_END: 2, NO_START: 1, NO_SIGNAL: 0}
 @dataclass
 class Config:
     """Mismos campos y valores por defecto que f2f_cfg_t."""
-    thr_frac_q8: int = 77
+    thr_frac_q8: int = 51
     noise_floor: int = 24
     class_thr_q8: int = 184
     pair_thr_q8: int = 320
@@ -49,6 +49,7 @@ class Config:
     sync_tol_q8: int = 51
     min_transitions: int = 10
     min_lead_zeros: int = 4
+    min_seg_bits: int = 24
 
 
 @dataclass
@@ -222,14 +223,23 @@ class BitTracker:
         self.sync_n = 0
         self.half_pending = False
         self.half_iv = 0
-        self.bad_run = 0
+        self.err_level = 0
+        self.seg_start = 0
         self.f2f_errors = 0
         self.bits: list[int] = []
         self.bit_period: list[int] = []
         self.bit_tidx: list[int] = []
         self.trans_period: list[int] = []
 
+    def _room(self):
+        if len(self.bits) >= MAX_BITS and self.seg_start > 0:
+            del self.bits[:self.seg_start]
+            del self.bit_period[:self.seg_start]
+            del self.bit_tidx[:self.seg_start]
+            self.seg_start = 0
+
     def _emit(self, b, per):
+        self._room()
         if len(self.bits) < MAX_BITS:
             self.bits.append(b)
             self.bit_period.append(int(per))
@@ -254,7 +264,23 @@ class BitTracker:
         self.sync_n = 0
         self.sync_sum = 0
         self.half_pending = False
-        self.bad_run = 0
+        self.err_level = 0
+        if len(self.bits) - self.seg_start < self.cfg.min_seg_bits:
+            del self.bits[self.seg_start:]
+            del self.bit_period[self.seg_start:]
+            del self.bit_tidx[self.seg_start:]
+        else:
+            self.seg_start = len(self.bits)
+
+    def _error(self):
+        self.f2f_errors += 1
+        self.err_level += 4
+        if self.err_level >= 12:
+            self._unlock()
+
+    def _good(self):
+        if self.err_level > 0:
+            self.err_level -= 1
 
     def feed(self, t: int):
         self._feed(int(t))
@@ -281,9 +307,10 @@ class BitTracker:
                     self.sync_sum = iv; self.sync_n = 1
             if self.sync_n >= cfg.sync_count:
                 self.period = max(self.sync_sum // self.sync_n, 1)
-                self.locked = True; self.half_pending = False; self.bad_run = 0
+                self.locked = True; self.half_pending = False; self.err_level = 0
                 n = self.sync_n
                 for i in range(n):
+                    self._room()
                     if len(self.bits) < MAX_BITS:
                         self.bits.append(0)
                         self.bit_period.append(self.period)
@@ -300,13 +327,10 @@ class BitTracker:
             if s * 256 <= cfg.pair_thr_q8 * p:
                 self._emit(1, s)
                 self._update(s)
-                self.bad_run = 0
+                self._good()
             else:
-                self.f2f_errors += 1
                 self._emit(0, p)
-                self.bad_run += 1
-                if self.bad_run >= 3:
-                    self._unlock()
+                self._error()
             return
         if iv * 256 < cfg.class_thr_q8 * p:
             self.half_pending = True
@@ -314,16 +338,13 @@ class BitTracker:
             return
         if iv * 2 > 3 * p:
             nb = (iv + p // 2) // p
-            self.f2f_errors += 1
             for _ in range(nb):
                 self._emit(0, iv // nb)
-            self.bad_run += 1
-            if self.bad_run >= 3:
-                self._unlock()
+            self._error()
             return
         self._emit(0, iv)
         self._update(iv)
-        self.bad_run = 0
+        self._good()
 
 
 # --------------------------------------------------------------------- ISO 7811
@@ -376,6 +397,8 @@ def _decode_one(bits, bper, fmt, rev, min_lead, best: Result) -> Result:
                 l2 += 1
                 pn = pp[i]
             lead = l2
+            if lead < min_lead:
+                continue
         r = Result(fmt=fmt, direction=rev, leading_zeros=lead, ss_bit=s)
         pos = s
         found_es = False
@@ -471,11 +494,16 @@ def decode(x, fs: float, fmt: int = FMT_AUTO, cfg: Config | None = None,
            decims=DEFAULT_DECIMS) -> Result:
     """Decodificador causal multi-instancia (equivalente a f2f_multi_*)."""
     best = None
+    oks = []
     for i, m in enumerate(decims):
         r = decode_instance(x, fs, fmt, cfg, m)
         r.instance = i
+        if r.status == OK:
+            oks.append(r)
         if best is None or result_better(r, best):
             best = r
+    if len(oks) > 1:            # varias correctas: la central (ver f2f_multi_finish)
+        best = oks[(len(oks) - 1) // 2]
     return best
 
 

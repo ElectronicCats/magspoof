@@ -12,7 +12,7 @@
 
 void f2f_cfg_default(f2f_cfg_t *c)
 {
-    c->thr_frac_q8 = 77;         /* 0.30 de la envolvente pico-pico */
+    c->thr_frac_q8 = 51;         /* 0.20 de la envolvente pico-pico */
     c->noise_floor = 24;         /* cuentas ADC p-p (~19 mV a 3.3 V / 4096) */
     c->class_thr_q8 = 184;       /* 0.72 */
     c->pair_thr_q8 = 320;        /* 1.25 */
@@ -22,6 +22,7 @@ void f2f_cfg_default(f2f_cfg_t *c)
     c->sync_tol_q8 = 51;         /* 20 % */
     c->min_transitions = 10;
     c->min_lead_zeros = 4;
+    c->min_seg_bits = 24;
 }
 
 void f2f_init(f2f_t *d, const f2f_cfg_t *cfg, uint32_t decim)
@@ -40,6 +41,14 @@ void f2f_set_log(f2f_t *d, int64_t *t, int32_t *v, uint32_t *p, uint32_t cap)
 
 static void emit_bit(f2f_t *d, uint8_t b, uint32_t per)
 {
+    if (d->n_bits >= F2F_MAX_BITS && d->seg_start > 0) {
+        /* Buffer lleno: se sacrifican los tramos anteriores y se conserva el actual. */
+        uint16_t keep = (uint16_t)(d->n_bits - d->seg_start);
+        memmove(d->bits, d->bits + d->seg_start, keep);
+        memmove(d->bit_period, d->bit_period + d->seg_start, keep * sizeof(d->bit_period[0]));
+        d->n_bits = keep;
+        d->seg_start = 0;
+    }
     if (d->n_bits < F2F_MAX_BITS) {
         d->bits[d->n_bits] = b;
         d->bit_period[d->n_bits] = per;
@@ -61,9 +70,27 @@ static void period_update(f2f_t *d, int64_t meas)
     d->period = (uint32_t)p;
 }
 
+/* Fin de tramo enganchado. Los tramos muy cortos (enganches espurios sobre ruido
+ * antes o despues de la pasada) se tiran para no llenar el buffer de bits. */
 static void bits_unlock(f2f_t *d)
 {
-    d->locked = 0; d->sync_n = 0; d->sync_sum = 0; d->half_pending = 0; d->bad_run = 0;
+    d->locked = 0; d->sync_n = 0; d->sync_sum = 0; d->half_pending = 0; d->err_level = 0;
+    if ((int32_t)(d->n_bits - d->seg_start) < d->cfg.min_seg_bits) d->n_bits = d->seg_start;
+    else d->seg_start = d->n_bits;
+}
+
+/* Error de trama F2F: se desengancha con 3 errores seguidos o con una tasa
+ * sostenida de errores superior a ~20 %. */
+static void bits_error(f2f_t *d)
+{
+    d->f2f_errors++;
+    d->err_level += 4;
+    if (d->err_level >= 12) bits_unlock(d);
+}
+
+static void bits_good(f2f_t *d)
+{
+    if (d->err_level > 0) d->err_level--;
 }
 
 static void bits_feed(f2f_t *d, int64_t t)
@@ -95,7 +122,7 @@ static void bits_feed(f2f_t *d, int64_t t)
             int64_t per = d->sync_sum / d->sync_n;
             if (per < 1) per = 1;
             d->period = (uint32_t)per;
-            d->locked = 1; d->half_pending = 0; d->bad_run = 0;
+            d->locked = 1; d->half_pending = 0; d->err_level = 0;
             for (i = 0; i < d->sync_n; i++) emit_bit(d, 0, d->period);
         }
         return;
@@ -115,11 +142,10 @@ static void bits_feed(f2f_t *d, int64_t t)
         if (sum * 256 <= (int64_t)d->cfg.pair_thr_q8 * p) {
             emit_bit(d, 1, (uint32_t)sum);
             period_update(d, sum);
-            d->bad_run = 0;
+            bits_good(d);
         } else {
-            d->f2f_errors++;                /* media + entera: transicion perdida o sobrante */
-            emit_bit(d, 0, (uint32_t)p);
-            if (++d->bad_run >= 3) bits_unlock(d);
+            emit_bit(d, 0, (uint32_t)p);    /* media + entera: transicion perdida o sobrante */
+            bits_error(d);
         }
         return;
     }
@@ -130,14 +156,13 @@ static void bits_feed(f2f_t *d, int64_t t)
     }
     if (iv * 2 > 3 * p) {                   /* > 1.5 P: falta alguna transicion */
         int64_t nb = (iv + p / 2) / p, i;
-        d->f2f_errors++;
         for (i = 0; i < nb; i++) emit_bit(d, 0, (uint32_t)(iv / nb));
-        if (++d->bad_run >= 3) bits_unlock(d);
+        bits_error(d);
         return;
     }
     emit_bit(d, 0, (uint32_t)iv);
     period_update(d, iv);
-    d->bad_run = 0;
+    bits_good(d);
 }
 
 void f2f_feed_edge(f2f_t *d, int64_t t_ticks)
@@ -316,6 +341,7 @@ static void decode_one(const uint8_t *bits, const uint32_t *bper, int n, int fmt
                 l2++; pn = p;
             }
             lead = l2;
+            if (lead < min_lead) continue;
         }
         memset(&r, 0, sizeof(r));
         r.fmt = (uint8_t)fmt; r.direction = (uint8_t)rev;
@@ -400,10 +426,8 @@ f2f_status_t f2f_finish(const f2f_t *d, f2f_fmt_t fmt, f2f_result_t *res)
 
 void f2f_multi_init(f2f_multi_t *m, const f2f_cfg_t *cfg, const uint32_t *decims)
 {
-    static const uint32_t def[F2F_MULTI_N] = { 1, 4, 16, 64 };
     int i;
-    if (!decims) decims = def;
-    for (i = 0; i < F2F_MULTI_N; i++) f2f_init(&m->inst[i], cfg, decims[i]);
+    for (i = 0; i < F2F_MULTI_N; i++) f2f_init(&m->inst[i], cfg, decims ? decims[i] : (1u << i));
 }
 
 void f2f_multi_feed_samples(f2f_multi_t *m, const uint16_t *x, size_t n, size_t stride)
@@ -415,11 +439,20 @@ void f2f_multi_feed_samples(f2f_multi_t *m, const uint16_t *x, size_t n, size_t 
 f2f_status_t f2f_multi_finish(const f2f_multi_t *m, f2f_fmt_t fmt, f2f_result_t *res)
 {
     f2f_result_t r;
-    int i;
+    int i, n_ok = 0, ok_idx[F2F_MULTI_N];
     for (i = 0; i < F2F_MULTI_N; i++) {
         f2f_finish(&m->inst[i], fmt, &r);
         r.instance = (uint8_t)i;
+        if (r.status == F2F_OK) ok_idx[n_ok++] = i;
         if (i == 0 || f2f_result_better(&r, res)) *res = r;
+    }
+    if (n_ok > 1) {
+        /* Varias instancias correctas: se toma la central. Las de los extremos estan
+         * al limite (poco suavizado: ruido; demasiado: interferencia entre pulsos) y
+         * dan peor temporizacion y peor cuenta de ceros de cabecera. */
+        i = ok_idx[(n_ok - 1) / 2];
+        f2f_finish(&m->inst[i], fmt, res);
+        res->instance = (uint8_t)i;
     }
     return res->status;
 }

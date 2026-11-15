@@ -79,7 +79,7 @@ def transitions_from_bits(bits, cell_m: float, x0_m: float = 0.0) -> np.ndarray:
 
 @dataclass
 class SynthParams:
-    text: str = ";1234567890123445=99011200XXXX00000000?"
+    text: str = ";1234567890123445=99011200123400000000?"
     track: int | None = None          # 1, 2 o 3; None = deducir del SS
     bpi: float | None = None          # None = el de la pista
     fs: float = 250e3                 # Hz por canal
@@ -101,6 +101,7 @@ class SynthParams:
     quiet_ms: float = 30.0            # silencio (solo ruido) antes y despues
     gates: bool = True                # simular las dos barreras opticas
     gate_pos_mm: tuple = (-25.0, -5.0)  # posicion de las barreras respecto al cabezal
+    flip_data_bits: tuple = ()        # indices (en SS..LRC) de bits a corromper en la tarjeta
     seed: int | None = 0
 
 
@@ -192,6 +193,8 @@ def synthesize(prm: SynthParams | None = None, **kw) -> SynthSwipe:
 
     # --- bits y posiciones sobre la tarjeta ---
     data = encode_chars(prm.text, fmt)
+    for i in prm.flip_data_bits:
+        data[i] ^= 1
     lead = prm.lead_zeros if prm.lead_zeros is not None else int((SS_POS_M - 0.5e-3) / cell)
     x_first = SS_POS_M - lead * cell
     room = int((CARD_LEN_M - 0.5e-3 - (SS_POS_M + len(data) * cell)) / cell)
@@ -303,3 +306,33 @@ def to_swipe(sw: SynthSwipe, chB: np.ndarray | None = None, meta: dict | None = 
         m.update(meta)
     return swipefile.Swipe(chA=sw.adc, chB=chB if chB is not None else np.zeros(0, np.int16),
                            dig=dig, fs=sw.fs, gate_edges=sw.gate_edges, meta=m)
+
+
+def main(argv=None):
+    """CLI: genera una pasada sintetica en formato .npz + .json."""
+    import argparse
+    from . import swipefile
+    ap = argparse.ArgumentParser(description="Genera una pasada sintetica (.npz + .json)")
+    ap.add_argument("out", help="ruta base de salida")
+    ap.add_argument("--text", default=SynthParams.text)
+    ap.add_argument("--speed", type=float, default=0.5)
+    ap.add_argument("--profile", default="hand", choices=["const", "accel", "hand"])
+    ap.add_argument("--v-end", type=float)
+    ap.add_argument("--reverse", action="store_true")
+    ap.add_argument("--pw50", type=float, default=40.0, help="um")
+    ap.add_argument("--snr", type=float, default=30.0, help="dB (pico aislado / ruido RMS)")
+    ap.add_argument("--hum-uV", type=float, default=0.0)
+    ap.add_argument("--fs", type=float, default=250e3)
+    ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--variant", default="synth")
+    a = ap.parse_args(argv)
+    sw = synthesize(text=a.text, speed=a.speed, profile=a.profile, v_end=a.v_end, reverse=a.reverse,
+                    pw50_um=a.pw50, snr_db=a.snr, hum_uV=a.hum_uV, fs=a.fs, seed=a.seed)
+    base = swipefile.save(to_swipe(sw, meta={"head_variant": a.variant}), a.out)
+    print(f"{base}: {len(sw.adc)} muestras, {len(sw.t_trans)} transiciones, pista {sw.track}")
+    return 0
+
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(main())

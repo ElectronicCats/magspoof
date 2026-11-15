@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "swipe_id": "",
+  "card_id": "LAB-T2-001",
+  "expected_tracks": {
+    "1": "%B1234567890123445^MAGHEAD/TEST^99011200000000000000**XXX******?",
+    "2": ";1234567890123445=99011200123400000000?"
+  },
+  "track_under_test": 2,
+  "channel_under_test": "A",
+  "head_variant": "V1",
+  "head_gap_um": 25.0,
+  "head_spacer": "Kapton 25 um",
+  "assembly_serial": "V1-003",
+  "spacing_shim_um": 0.0,
+  "pad_force_N": 1.0,
+  "lateral_offset_mm": 0.0,
+  "azimuth_deg": 0.0,
+  "afe_gain_a": 200.0,
+  "afe_gain_b": 200.0,
+  "volts_per_count": 0.0008056640625,
+  "nominal_speed_m_s": 0.3,
+  "speed_source": "hand",
+  "operator": "",
+  "date": "2026-11-15T10:00:00+00:00",
+  "firmware_version": "maghead_capture 0.1.0",
+  "capture_source": "",
+  "dropped_blocks": 0,
+  "gaps": [],
+  "notes": ""
+}

@@ -21,7 +21,8 @@ TEST_HOST = os.path.join(FW_COMMON, "build", "test_host")
 class CCfg(C.Structure):
     _fields_ = [(n, C.c_int32) for n in (
         "thr_frac_q8", "noise_floor", "class_thr_q8", "pair_thr_q8", "period_alpha_shift",
-        "period_bound_shift", "sync_count", "sync_tol_q8", "min_transitions", "min_lead_zeros")]
+        "period_bound_shift", "sync_count", "sync_tol_q8", "min_transitions", "min_lead_zeros",
+        "min_seg_bits")]
 
 
 class CResult(C.Structure):
@@ -80,7 +81,9 @@ def decode(x, fs: float, fmt: int = pydec.FMT_AUTO, cfg=None, decims=pydec.DEFAU
     n = len(xa)
     cr = CResult()
     cc = _cfg(cfg)
-    dec = (C.c_uint32 * 4)(*decims)
+    if len(decims) != L.f2f_host_multi_n():
+        raise ValueError("decims debe tener F2F_MULTI_N elementos")
+    dec = (C.c_uint32 * len(decims))(*decims)
     cap = n + 16 if want_log else 0
     tl = np.zeros(max(cap, 1), np.int64)
     vl = np.zeros(max(cap, 1), np.int32)
@@ -104,6 +107,15 @@ def decode(x, fs: float, fmt: int = pydec.FMT_AUTO, cfg=None, decims=pydec.DEFAU
     r.trans_period = pl[:nt.value].astype(np.int64)
     r.bits = bits[:nb.value].copy()
     r.bit_period = bper[:nb.value].astype(np.int64)
+    if want_log:
+        # bit -> transicion que lo cierra: se reconstruye con el seguidor Python sobre las
+        # transiciones del C (de paso comprueba en cada llamada que ambos coinciden).
+        tr = pydec.BitTracker(cfg or pydec.Config())
+        for ti in r.trans_ticks.tolist():
+            tr.feed(ti)
+        if not np.array_equal(np.array(tr.bits, np.uint8), r.bits):
+            raise RuntimeError("discrepancia entre el seguidor de bits C y el de Python")
+        r.bit_tidx = np.array(tr.bit_tidx, dtype=np.int64)
     return r
 
 

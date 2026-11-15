@@ -83,7 +83,8 @@ Lecturas:
 - En pista 1 la separación efectiva d manda mucho más que el entrehierro: pasar de g = 12.5 a 50 µm cuesta ~15 % de resolución; pasar de d = 12.5 a 50 µm la reduce a menos de la mitad y además baja la amplitud absoluta de unos 17 dB. **El control de la distancia banda–polo es el problema de ingeniería dominante, no el entrehierro.**
 - Pista 2 tolera d ≈ 75–100 µm con cualquiera de las geometrías.
 - El entrehierro por solape pierde ~15–20 % de resolución frente al de tope y ~7 dB de amplitud en T1 (el polo inferior queda retranqueado), pero su valor está definido por el espesor de una película, no por un corte de precisión.
-- Qué relación unos/ceros necesita el decodificador se obtiene de la simulación del decodificador (ver `tools/out/`), no de esta tabla.
+- Requisito que impone el decodificador **[S]** (`tools/out/decode_vs_snr_pw50.md`: decodificador en C sobre pulsos lorentzianos ideales, 200 pasadas por punto, 0.1–1.0 m/s con variación manual de ±30 %): en pista 1 la lectura completa correcta se mantiene ≥ 95 % con **PW50 ≤ ~100 µm** y SNR de pico ≥ 18–24 dB; con 120–140 µm exige 27–30 dB y por encima de ~160 µm no se alcanza con ninguna SNR. Pista 2 decodifica con 12–15 dB en todo el intervalo de 40–200 µm.
+- Cruzando con la fila de PW50: **el cabezal de entrehierro a tope de 25 µm necesita d ≲ 35 µm para pista 1; el de solape (PW50 ≈ 90–117 µm entre 12.5 y 25 µm) necesita d ≲ 15–20 µm.** Ese es el objetivo mecánico del experimento. Es una simulación con pulsos ideales, no una predicción de un cabezal real.
 
 ### 4.2 Eficiencia del circuito magnético [E]
 

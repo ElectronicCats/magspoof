@@ -1,0 +1,24 @@
+; dig_sample.pio - Muestreo de las 4 entradas digitales (GP2..GP5) a la misma cadencia
+; que el ADC. Un "in pins, 4" por ciclo del reloj de la maquina de estados; con autopush a
+; 32 bits salen 8 muestras por palabra, la primera en el nibble bajo (desplazamiento a la
+; derecha). El divisor de reloj se fija a clk_sys / fs_total.
+;
+;   bit 0 = GP2 comparador A, bit 1 = GP3 comparador B,
+;   bit 2 = GP4 barrera 1,    bit 3 = GP5 barrera 2   (niveles de pin)
+
+.program dig_sample
+.wrap_target
+    in pins, 4
+.wrap
+
+% c-sdk {
+static inline void dig_sample_program_init(PIO pio, uint sm, uint offset, uint pin_base, float clkdiv) {
+    pio_sm_config c = dig_sample_program_get_default_config(offset);
+    sm_config_set_in_pins(&c, pin_base);
+    sm_config_set_in_shift(&c, true, true, 32);      /* a la derecha, autopush, 32 bits */
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+    sm_config_set_clkdiv(&c, clkdiv);
+    pio_sm_set_consecutive_pindirs(pio, sm, pin_base, 4, false);
+    pio_sm_init(pio, sm, offset, &c);
+}
+%}

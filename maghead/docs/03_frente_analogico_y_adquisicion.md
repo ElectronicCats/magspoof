@@ -46,4 +46,8 @@ Orden de trabajo: (1) captura cruda de 2 canales + compuertas, (2) detección de
 
 Validación de la decodificación: sentido de lectura (se intenta directo e invertido buscando el centinela de inicio), paridad impar por carácter, LRC, y códigos de estado distintos para "sin señal", "transiciones sin centinela", "errores de paridad", "error de LRC" y "correcto".
 
+Estado del software (ejecutado en PC con señales sintéticas): 172 pruebas de Python y 125 comprobaciones del módulo en C superadas; el decodificador en C coincide con la referencia en Python en 39 vectores; ida y vuelta de pistas 1 y 2 en ambos sentidos, 0.05–1.5 m/s, con aceleración. Cada canal ejecuta 7 instancias del decodificador a distintas decimaciones para cubrir todo el intervalo de velocidad sin conocerla.
+
+Lo que **no** está probado: el firmware (`fw/maghead_capture/main.c` y el programa PIO) no se ha compilado contra el SDK real del Pico ni ha corrido en una placa; el caudal USB no está medido y 2 canales a 250 kS/s (1 MB/s) probablemente exceden lo que da un CDC Full-Speed en continuo, por lo que el modo previsto es captura disparada con búfer en RAM o un solo canal; la temporización ADC/PIO y los umbrales por defecto solo se han ajustado en simulación. La cadena de prueba de pista 2 se cambió a `;1234567890123445=99011200123400000000?` porque la pista 2 no admite letras.
+
 Detalle, formato de archivos y resultados de las pruebas del software: `tools/README.md` y `fw/README.md`.

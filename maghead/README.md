@@ -10,6 +10,8 @@ Trabajo de investigación y primer experimento fabricable para un sucesor del Ma
 4. **Primero pista 2, después pista 1 con el mismo cabezal** (el cupón se recoloca 3.30 mm con pasadores). Pista 2 valida la cadena; pista 1 decide si la geometría sirve.
 5. El riesgo dominante no es el entrehierro ni el ruido, sino **mantener la banda a ≤ 25 µm del polo** con una superficie plana: en pista 1 cada micrómetro cuesta 0.45 dB.
 
+Objetivo mecánico que sale de simular el decodificador: PW50 ≤ ~100 µm en pista 1, es decir separación banda–polo ≲ 35 µm con entrehierro a tope de 25 µm y ≲ 15–20 µm con el de solape.
+
 Números clave (estimaciones, ver `docs/01`): señal del cupón H ≈ 45–250 µV de pico a 19 cm/s (15–50 veces menos que un cabezal comercial), fuente de ≈ 12 Ω, SNR estimada ≥ 26 dB en el peor caso con el frente analógico propuesto.
 
 ## Qué se propone fabricar
@@ -43,6 +45,7 @@ Números clave (estimaciones, ver `docs/01`): señal del cupón H ≈ 45–250 �
 - KiCad 9.0.9: DRC de las cuatro tarjetas con 0 errores y 0 conexiones pendientes; ERC del AFE con 0 errores y 0 advertencias.
 - Comprobación geométrica propia de separación entre espiras (el DRC no la cubre al ser una sola red): mínimo 0.127 mm, 0 violaciones.
 - Netlist del AFE contra tabla independiente: coincide.
+- Software: 172 pruebas en Python y 125 comprobaciones en C superadas con señales sintéticas; el firmware del Pico no se ha compilado para la placa.
 - Solver de campo contra la solución analítica de Karlqvist: 1.5 % en el pico.
 
 ## Qué falta para fabricar

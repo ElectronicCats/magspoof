@@ -35,7 +35,9 @@ extern "C" {
 #define F2F_MAX_BITS   1024   /* pista 1 completa: 709 celdas a 210 bpi */
 #define F2F_MAX_CHARS  112    /* pista 3: 107 caracteres */
 #define F2F_MAX_PERR   16     /* posiciones de error de paridad que se guardan */
-#define F2F_MULTI_N    4      /* instancias en paralelo con distinto diezmado */
+#ifndef F2F_MULTI_N
+#define F2F_MULTI_N    7      /* instancias en paralelo (diezmados 1, 2, 4 ... 64) */
+#endif
 
 typedef enum {
     F2F_OK = 0,          /* SS..ES encontrados, paridad y LRC correctos */
@@ -56,7 +58,7 @@ typedef enum {
 #define F2F_DIR_REV 1
 
 typedef struct {
-    int32_t thr_frac_q8;        /* histeresis = thr_frac * envolvente p-p (Q8; 77 = 0.30) */
+    int32_t thr_frac_q8;        /* histeresis = thr_frac * envolvente p-p (Q8; 51 = 0.20) */
     int32_t noise_floor;        /* histeresis minima, cuentas ADC pico-pico */
     int32_t class_thr_q8;       /* intervalo < class_thr * P => media celda (Q8; 184 = 0.72) */
     int32_t pair_thr_q8;        /* suma de dos medias <= pair_thr * P => bit 1 (Q8; 320 = 1.25) */
@@ -65,7 +67,8 @@ typedef struct {
     int32_t sync_count;         /* intervalos consecutivos concordantes para enganchar */
     int32_t sync_tol_q8;        /* tolerancia de concordancia (Q8; 51 = 20 %) */
     int32_t min_transitions;    /* por debajo => F2F_NO_SIGNAL */
-    int32_t min_lead_zeros;     /* ceros exigidos justo antes del SS */
+    int32_t min_lead_zeros;     /* ceros (de periodo coherente) exigidos justo antes del SS */
+    int32_t min_seg_bits;       /* tramos enganchados mas cortos se descartan (basura por ruido) */
 } f2f_cfg_t;
 
 typedef struct {
@@ -122,7 +125,8 @@ typedef struct {
     int32_t  sync_n;
     int      half_pending;
     int64_t  half_iv;
-    int32_t  bad_run;
+    int32_t  err_level;         /* contador con fuga: +4 por error, -1 por bit bueno */
+    uint16_t seg_start;         /* primer bit del tramo enganchado actual */
     uint32_t f2f_errors;
     uint16_t n_bits;
     uint8_t  bits[F2F_MAX_BITS];
@@ -149,8 +153,8 @@ void f2f_feed_samples(f2f_t *d, const uint16_t *x, size_t n, size_t stride);
 void f2f_feed_edge(f2f_t *d, int64_t t_ticks);
 f2f_status_t f2f_finish(const f2f_t *d, f2f_fmt_t fmt, f2f_result_t *res);
 
-/* Varias instancias en paralelo (diezmados por defecto 1, 4, 16, 64) para cubrir
- * 0.05 - 1.5 m/s sin conocer la velocidad; coste total ~1.33x una instancia. */
+/* Varias instancias en paralelo (diezmados por defecto 1, 2, 4 ... 2^(N-1)) para cubrir
+ * 0.05 - 1.5 m/s sin conocer la velocidad; coste total < 2x una instancia. */
 void f2f_multi_init(f2f_multi_t *m, const f2f_cfg_t *cfg, const uint32_t *decims);
 void f2f_multi_feed_samples(f2f_multi_t *m, const uint16_t *x, size_t n, size_t stride);
 f2f_status_t f2f_multi_finish(const f2f_multi_t *m, f2f_fmt_t fmt, f2f_result_t *res);
