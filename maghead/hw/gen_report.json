@@ -1,0 +1,109 @@
+{
+ "coil": {
+  "n": 12,
+  "ax": 0.9,
+  "az": 2.75,
+  "p": 0.254,
+  "w": 0.127,
+  "zv": 2.15,
+  "via_d": 0.6,
+  "via_drill": 0.3,
+  "slot_w": 1.0,
+  "slot_l": 3.0,
+  "v3dx": 0.8
+ },
+ "H": {
+  "sites": [
+   {
+    "tag": "S1",
+    "x0": -12.5,
+    "zt": -7.06,
+    "turns_total": 72,
+    "length_mm": 1919.5,
+    "turn_area_L_mm2": -1436.6,
+    "turn_area_R_mm2": 1436.6,
+    "net_uncompensated_area_mm2": 11.96,
+    "rejection_uniform_field_dB": -41.6
+   },
+   {
+    "tag": "S2",
+    "x0": 12.5,
+    "zt": -10.36,
+    "turns_total": 72,
+    "length_mm": 1926.1,
+    "turn_area_L_mm2": -1436.6,
+    "turn_area_R_mm2": 1436.6,
+    "net_uncompensated_area_mm2": 24.85,
+    "rejection_uniform_field_dB": -35.2
+   }
+  ],
+  "min_copper_gap_mm": 0.127,
+  "violations": 0,
+  "detail": [],
+  "n_segments": 618,
+  "n_vias": 22,
+  "R_dc_ohm_estimada": 12.4
+ },
+ "A": {
+  "patterns": [
+   {
+    "tag": "A1",
+    "tipo": "pista unica",
+    "ancho_mm": 0.1,
+    "mascara": false,
+    "long_sensible_mm": 3.8
+   },
+   {
+    "tag": "A2",
+    "tipo": "pista unica",
+    "ancho_mm": 0.1,
+    "mascara": true,
+    "long_sensible_mm": 3.8
+   },
+   {
+    "tag": "A3",
+    "tipo": "pista unica",
+    "ancho_mm": 0.2,
+    "mascara": false,
+    "long_sensible_mm": 3.8
+   },
+   {
+    "tag": "A4",
+    "tipo": "meandro adaptado a ceros de T2",
+    "conductores": 10,
+    "paso_mm": 0.3387,
+    "ancho_mm": 0.15,
+    "mascara": false
+   }
+  ],
+  "min_copper_gap_mm": 2.448,
+  "violations": 0,
+  "detail": []
+ },
+ "base": {
+  "tongues": [
+   {
+    "x_pad": -12.5,
+    "z_pad": -8.7,
+    "largo_mm": 20.0,
+    "ancho_mm": 5.0,
+    "k_N_per_mm_estimada": 3.44
+   },
+   {
+    "x_pad": 12.5,
+    "z_pad": -8.7,
+    "largo_mm": 20.0,
+    "ancho_mm": 5.0,
+    "k_N_per_mm_estimada": 3.44
+   }
+  ],
+  "gate_spacing_mm": 20.0,
+  "min_copper_gap_mm": 1.35,
+  "violations": 0,
+  "detail": []
+ },
+ "spacer": {
+  "ancho_mm": 14.0,
+  "largo_mm": 120.0
+ }
+}

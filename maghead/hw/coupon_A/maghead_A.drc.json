@@ -1,0 +1,339 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-15T00:34:18+0000",
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "9.0.9",
+    "schematic_parity": [],
+    "source": "maghead_A.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "NPTH pad of M3",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 91.35
+                    },
+                    "uuid": "3fc6603c-7948-4b40-b68c-abbeefd5fe3d"
+                },
+                {
+                    "description": "PCB text 'A1' on B.Silkscreen",
+                    "pos": {
+                        "x": 79.35,
+                        "y": 95.0
+                    },
+                    "uuid": "f7d7a0c0-a1f9-44ca-8c4d-00e0c3d5a197"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint M3",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 91.35
+                    },
+                    "uuid": "13cbafc4-2ab0-46e4-b69e-3f42218ecb28"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint P1",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 97.0
+                    },
+                    "uuid": "2546c168-de2a-4e40-ab94-2f1837c4e5ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint P1",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 97.0
+                    },
+                    "uuid": "65ebc15d-c974-4523-b0eb-19ec60be2704"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint M3",
+                    "pos": {
+                        "x": 119.0,
+                        "y": 91.35
+                    },
+                    "uuid": "695fe2e9-9f71-4a06-8e42-6f5990d5f5b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint P2",
+                    "pos": {
+                        "x": 126.0,
+                        "y": 93.7
+                    },
+                    "uuid": "711efabe-fbd5-4883-82b2-abe7f9984978"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint M3",
+                    "pos": {
+                        "x": 81.0,
+                        "y": 91.35
+                    },
+                    "uuid": "df643fcd-2351-4878-9ec9-a94a6f2c2dc7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint P2",
+                    "pos": {
+                        "x": 74.0,
+                        "y": 93.7
+                    },
+                    "uuid": "f660e27e-efa2-41c0-bbc5-6d67866bdb50"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA2B",
+                    "pos": {
+                        "x": 88.2,
+                        "y": 97.5
+                    },
+                    "uuid": "1a79449d-5445-40a8-a194-b9f24fbec04a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA1A",
+                    "pos": {
+                        "x": 77.5,
+                        "y": 97.5
+                    },
+                    "uuid": "1e88d64e-d480-48ea-8673-76dfa34cd819"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA3A",
+                    "pos": {
+                        "x": 91.5,
+                        "y": 97.5
+                    },
+                    "uuid": "6835d48c-aec8-45e6-822f-04bf328bcae2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA1B",
+                    "pos": {
+                        "x": 81.2,
+                        "y": 97.5
+                    },
+                    "uuid": "86f1d91e-7076-477c-854d-5f7bc9d0328d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA4A",
+                    "pos": {
+                        "x": 101.5,
+                        "y": 97.5
+                    },
+                    "uuid": "8f088d2d-272c-430a-8d3f-3db66198dd04"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA4B",
+                    "pos": {
+                        "x": 105.2,
+                        "y": 97.5
+                    },
+                    "uuid": "98322be0-bd52-4d09-b5db-5d20757c7334"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA3B",
+                    "pos": {
+                        "x": 95.2,
+                        "y": 97.5
+                    },
+                    "uuid": "ae2c7f19-1e8c-454a-aee4-16834e6af64c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'maghead'.",
+            "items": [
+                {
+                    "description": "Footprint JA2A",
+                    "pos": {
+                        "x": 84.5,
+                        "y": 97.5
+                    },
+                    "uuid": "e17e53a5-62a0-4300-9a51-2780f72d6c3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on B.Silkscreen",
+                    "pos": {
+                        "x": 72.6,
+                        "y": 97.0
+                    },
+                    "uuid": "19fd7a0b-b5ea-423d-ae02-9fd52e4cbff4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on B.Silkscreen",
+                    "pos": {
+                        "x": 72.6,
+                        "y": 97.5
+                    },
+                    "uuid": "bbabe976-879c-4336-ad39-8b5cd6f83fec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Segment on B.Silkscreen",
+                    "pos": {
+                        "x": 72.6,
+                        "y": 98.0
+                    },
+                    "uuid": "9a6a45e2-308d-421a-90a6-e67d981cd892"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'P1' on B.Silkscreen",
+                    "pos": {
+                        "x": 76.4,
+                        "y": 97.0
+                    },
+                    "uuid": "ed982e8e-ccc1-4b09-979e-ff56efe79ade"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "PCB text 'A1' on B.Silkscreen",
+                    "pos": {
+                        "x": 79.35,
+                        "y": 95.0
+                    },
+                    "uuid": "f7d7a0c0-a1f9-44ca-8c4d-00e0c3d5a197"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

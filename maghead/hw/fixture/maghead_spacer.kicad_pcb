@@ -1,0 +1,621 @@
+(kicad_pcb
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(general
+		(thickness 1)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(title_block
+		(title "MagHead separador / guia de canto")
+		(rev "A")
+		(company "Electronic Cats")
+		(comment 1 "2 capas sin cobre, 1.0 mm (define la altura de ranura)")
+		(comment 2 "Generado por hw/gen_pcbs.py - prototipo de laboratorio")
+	)
+	(layers
+		(0 "F.Cu" signal)
+		(2 "B.Cu" signal)
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0.05)
+		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
+		(pcbplotparams
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 4)
+			(plotframeref no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plot_black_and_white yes)
+			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(net 0 "")
+	(footprint "maghead:NPTH"
+		(layer "F.Cu")
+		(uuid "6d6987e1-4a44-44c9-ac50-cc7d7bfb6677")
+		(at 150 93)
+		(property "Reference" "M3"
+			(at 0 -2.6 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "65771576-1b86-4cc3-ad9c-ddf7f31103a9")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "NPTH"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "450f25f1-4967-459c-aea3-9f08c2014202")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e697cb71-b747-45c1-96b9-98ae8a1a1970")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98401639-b3f5-472d-9dba-e01d005dfa68")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "e5096db7-1b05-4b78-bd44-66cb805e0207")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "maghead:NPTH"
+		(layer "F.Cu")
+		(uuid "b9017c10-d6fb-4d26-895c-a3481e4f49b6")
+		(at 119 93)
+		(property "Reference" "M3"
+			(at 0 -2.6 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d5d5d701-9534-4b06-be32-674b5da1a2f2")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "NPTH"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dfb2bee5-1640-49d7-a87c-4172441cf5e2")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a87ad3ce-8b8a-424f-99fc-2b1940f99309")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "faa8a8eb-a113-435a-8d6a-e46bd9561265")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "8df78902-1a1f-4ab7-967c-7eacd9b6a74d")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "maghead:NPTH"
+		(layer "F.Cu")
+		(uuid "c6628007-3aad-4531-a66c-728e6e352f98")
+		(at 81 93)
+		(property "Reference" "M3"
+			(at 0 -2.6 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "48a05e78-4696-4ad6-9b8c-bbe6494261fc")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "NPTH"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62c11cb2-81fe-4876-8010-aebf6516678d")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31be9e1a-8d5e-4516-940f-604fd11e0315")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da8a2667-0e8b-409c-a69b-b5d1538edda2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "34129b75-f477-4905-98fa-e8ca9c7cc9ef")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "maghead:NPTH"
+		(layer "F.Cu")
+		(uuid "c9e08296-f9ba-4aff-8795-820a0c42c095")
+		(at 50 93)
+		(property "Reference" "M3"
+			(at 0 -2.6 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8a9bc4a1-f84d-4e68-9021-f1f58ec11cc1")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "NPTH"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50e30f36-0bf6-4373-be77-0774b8a526c8")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "939cd222-7be5-4c3a-9d10-5b79aff81755")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f52e6a95-b66a-4215-8e15-e8d19b7463e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "858102de-420c-499e-939c-4078d8663fee")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "maghead:NPTH"
+		(layer "F.Cu")
+		(uuid "d401fe55-9fef-411a-a25f-9c7c9107f27c")
+		(at 74 97)
+		(property "Reference" "DW"
+			(at 0 -2.6 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "52946c38-5ae4-43e9-8e3d-a5fe8f109b81")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "NPTH"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26db30a7-4395-4ff3-b3bb-72e11729e715")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29f13106-a808-48ba-b1a3-379a94414f21")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53f1d388-8456-4ae6-a879-5c6dd9b44aad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "360c6dd5-2bb2-438d-aed7-61177df70209")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "maghead:NPTH"
+		(layer "F.Cu")
+		(uuid "eee89652-4e44-4bee-a0d8-a101fb55b80f")
+		(at 100 93)
+		(property "Reference" "M3"
+			(at 0 -2.6 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "25979cbe-9da8-4561-923b-989784a4ec8f")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "NPTH"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a1428d9-7d9f-477a-ba3d-58d66308af39")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07829282-4016-4ff5-9441-2d6ace80ddf4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5fc8741-94fa-46df-b38f-68a90c8d1ad0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "35dad703-9cf2-411f-8db9-9e3fbe31d89e")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "maghead:NPTH"
+		(layer "F.Cu")
+		(uuid "f9189a8e-1280-4d5d-90c2-962140f7bbd2")
+		(at 126 97)
+		(property "Reference" "DW"
+			(at 0 -2.6 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d5249f54-1805-4639-9879-5b1ec3e6f66d")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Value" "NPTH"
+			(at 0 2.6 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4f197ea-cd20-4e89-acf5-b76943fd6d06")
+			(effects
+				(font
+					(size 0.8 0.8)
+					(thickness 0.12)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0469f47-bfab-439c-a785-e7f53385b33d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d985de31-cb86-4662-a090-d23219f60f87")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "4fd0deb8-3102-4c35-ba1f-623dd72984cd")
+		)
+		(embedded_fonts no)
+	)
+	(gr_line
+		(start 40 86.6)
+		(end 40 99.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "db847bd9-1518-4677-9f15-48121e151006")
+	)
+	(gr_arc
+		(start 40 86.6)
+		(mid 40.175707 86.175707)
+		(end 40.6 86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5820a63f-850c-4f49-adc8-69e140be3652")
+	)
+	(gr_arc
+		(start 40.6 100)
+		(mid 40.175707 99.824293)
+		(end 40 99.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "39c7afa2-f86e-4bf5-9fd1-4d8dc7ea2cc5")
+	)
+	(gr_line
+		(start 40.6 100)
+		(end 159.4 100)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9bcf0fb8-1b26-4a20-a8d0-809d75019352")
+	)
+	(gr_line
+		(start 159.4 86)
+		(end 40.6 86)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2f128ff8-b1e8-4a5c-a62a-24c6fd359544")
+	)
+	(gr_arc
+		(start 159.4 86)
+		(mid 159.824293 86.175707)
+		(end 160 86.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "a8262479-4c9d-41b7-9bed-44c193c88426")
+	)
+	(gr_arc
+		(start 160 99.4)
+		(mid 159.824293 99.824293)
+		(end 159.4 100)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c983ff95-17c0-466e-ad56-28f841617ade")
+	)
+	(gr_line
+		(start 160 99.4)
+		(end 160 86.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9e40a070-e349-455b-8864-950760e8c5ef")
+	)
+	(gr_text "MagHead SEPARADOR/GUIA revA  EC   1.0 mm   canto guia = borde largo junto a esta marca  vvv"
+		(at 100 88.5 0)
+		(layer "F.SilkS")
+		(uuid "3434dce3-3a70-460e-aeed-6b92e007fc5a")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(gr_text "CANTO GUIA (z=0)"
+		(at 138 98.6 0)
+		(layer "F.SilkS")
+		(uuid "b5b9d638-151d-4437-86fd-dfa2e151d2ff")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
