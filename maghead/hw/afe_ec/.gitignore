@@ -1,0 +1,10 @@
+# Herramientas y salidas del flujo interno de diseno: no se publican
+tools/
+floorplan/
+route/
+review/
+*.bak
+netlist_baseline.json
+house_rules.yaml
+*.kicad_dru
+bom-cost.*

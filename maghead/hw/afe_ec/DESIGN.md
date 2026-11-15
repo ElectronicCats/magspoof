@@ -1,6 +1,6 @@
 # maghead-afe: design spec
 
-Estado: **LOCKED por el diseñador el 2026-11-15** con las propuestas del borrador (ver Decisions). Cada dato de hardware está comprobado o marcado UNVERIFIED.
+Estado: **LOCKED por el diseñador el 2026-11-15** (ver Decisions). Cada dato de hardware está comprobado o marcado UNVERIFIED.
 
 Sustituye a `../afe/` (rev A hecha fuera del flujo de la casa; ver "Por qué se rehace").
 
@@ -13,13 +13,12 @@ Sustituye a `../afe/` (rev A hecha fuera del flujo de la casa; ver "Por qué se 
   conexión al MCU y monitor en el borde derecho. Altura libre.
 - **Alimentación:** 5 V (VBUS del Pico) → LDO 3.3 V analógico; consumo < 30 mA. Sin alta tensión.
 - **Ensamblaje:** JLC Economic, una cara. Cantidad: **POR CONFIRMAR** (propuesta: 5).
-- **Placa:** 2 capas JLC2L-1.6 con GND en ambas caras (regla de la casa; 38 de 43 placas EC son de 2 capas).
+- **Placa:** 2 capas JLC2L-1.6 con GND en ambas caras.
   4 capas solo si el diseñador lo pide.
-- **Reglas:** `pcb-house-rules` sin excepciones: pista 0.2 señal / 0.5 potencia, vías 0.6/0.3 y 0.8/0.4,
-  separación 0.2, borde 0.5, ortogonal con 45° cortos, pasivos 0603, serigrafía 1.0 mm.
+- **Reglas:** las reglas de diseño internas de Electronic Cats, sin excepciones.
 
 ## Blocks
-Los números LCSC# no están asignados: salen de `jlc-bom-cost` a la cantidad real. Ninguno se inventa aquí.
+Los números LCSC# no están asignados: se asignan a la cantidad real. Ninguno se inventa aquí.
 
 | Block | Parts (LCSC#, tier) | Notes |
 |---|---|---|
@@ -47,11 +46,8 @@ El MCU no va en esta placa. Cabecera J4 hacia un Raspberry Pi Pico 2:
 Alternativa **POR CONFIRMAR**: montar el Pico directamente en la placa (zócalo 2×20) y eliminar J4.
 
 ## Por qué se rehace
-Auditoría de `../afe/maghead_afe.kicad_pcb` con `check_routing.py` (reglas de la casa): más de 260 segmentos en
-ángulo arbitrario, 9 esquinas agudas (trampas de ácido), 6 tramos largos a 45° (hasta 20 mm), pistas de 0.25 mm
-fuera de la lista de la casa, borde a 0.3 mm en vez de 0.5, serigrafía de 0.8 mm, sin vertido de GND en F.Cu, 4 capas
-sin necesidad, componentes THT evitables, piezas sin `LCSC#`. Además se saltó el flujo: se ruteó sin aprobar
-colocación y se exportaron Gerbers sin puerta de liberación.
+La rev A de `../afe/` no cumple las reglas de diseño internas (ángulos de ruteo, anchos, márgenes, serigrafía,
+capas y piezas THT evitables) y se hizo sin aprobar la colocación antes de rutear.
 
 ## Preguntas abiertas para bloquear
 1. Cantidad a fabricar y si la ensambla JLC (Economic) o se suelda a mano.
